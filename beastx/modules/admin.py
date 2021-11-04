@@ -31,8 +31,8 @@ from telethon.tl.types import (
     MessageMediaPhoto,
 )
 
-from firebot import BOTLOG, BOTLOG_CHATID, CMD_HELP
-from firebot.utils import admin_cmd, errors_handler
+from beastx import BOTLOG, BOTLOG_CHATID, CMD_HELP
+from beastx.utils import admin_cmd, errors_handler
 
 # =================== CONSTANT ===================
 PP_TOO_SMOL = "`The image is too small`"
