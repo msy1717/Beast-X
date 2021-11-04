@@ -55,8 +55,8 @@ pm_caption += f" ||•|| sᴇᴄᴜʀɪᴛʏ ʙʏ Beast-x ||•||\n"
 pm_caption += " [ɢɪᴛʜᴜʙ](https://github.com/msy1717/Beast-X) • "
 
 
-@fire.on(fire_on_cmd(pattern=r"alive"))
-@fire.on(sudo_cmd(pattern=r"alive", allow_sudo=True))
+@beast.on(beastx_cmd(pattern=r"alive"))
+@beast.on(sudo_cmd(pattern=r"alive", allow_sudo=True))
 async def chris(alive):
     await alive.get_chat()
     """ For .alive command, check if the bot is running.  """
