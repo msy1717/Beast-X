@@ -18,8 +18,8 @@ import re
 from telethon import events
 
 from var import Var
-from firebot import bot
-from firebot.Configs import Config
+from beastx import bot
+from beastx.Configs import Config
 
 
 def ignore_fwd():
