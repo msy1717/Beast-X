@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Numeric, UnicodeText
 
-from firebot.modules.sql_helper import BASE, SESSION
+from beastx.modules.sql_helper import BASE, SESSION
 
 
 class LydiaAI(BASE):
