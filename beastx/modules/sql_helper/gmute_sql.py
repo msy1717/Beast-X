@@ -1,5 +1,5 @@
 try:
-    from firebot.modules.sql_helper import BASE, SESSION
+    from beastx.modules.sql_helper import BASE, SESSION
 except ImportError:
     raise Exception("Hello!")
 
