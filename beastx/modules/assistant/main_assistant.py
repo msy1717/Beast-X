@@ -8,15 +8,15 @@ from telethon import Button, custom, events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.utils import pack_bot_file_id
 
-from firebot import bot
-from firebot.Configs import Config
-from firebot.modules.sql_helper.blacklist_assistant import (
+from beastx import bot
+from beastx.Configs import Config
+from beastx.modules.sql_helper.blacklist_assistant import (
     add_nibba_in_db,
     is_he_added,
     removenibba,
 )
-from firebot.modules.sql_helper.botusers_sql import add_me_in_db, his_userid
-from firebot.modules.sql_helper.idadder_sql import (
+from beastx.modules.sql_helper.botusers_sql import add_me_in_db, his_userid
+from beastx.modules.sql_helper.idadder_sql import (
     add_usersid_in_db,
     already_added,
     get_all_users,
@@ -71,20 +71,7 @@ async def start(event):
 # Data's
 
 
-@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"deploy")))
-async def help(event):
-    await event.delete()
-    if event.query.user_id is not bot.uid:
-        await tgbot.send_message(
-            event.chat_id,
-            message="You Can Deploy Fire-X In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
-            link_preview=False,
-            buttons=[
-                [custom.Button.inline("Deploy your Fire-X", data="deploy")],
-                [Button.url("Help Me ❓", "https://t.me/firexuserbot")],
-                [Button.url("Github Repo ❓", "github.com/TeamEviral/Fire-X")],
-            ],
-        )
+
 
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"users")))
