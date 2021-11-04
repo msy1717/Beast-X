@@ -8,6 +8,7 @@ from uniborg.util import beastx_cmd, sudo_cmd
 from beastx import ALIVE_NAME, CMD_HELP, Lastupdate
 from beastx.Configs import Config
 from beastx.modules import currentversion
+from beastx import beast
 
 
 # Functions
