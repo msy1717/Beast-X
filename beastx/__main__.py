@@ -7,9 +7,9 @@ import telethon.utils
 from telethon import TelegramClient
 
 from var import Var
-from firebot import bot
-from firebot.Configs import Config
-from firebot.utils import load_module, start_assistant
+from beastx import bot
+from beastx.Configs import Config
+from beastx.utils import load_module, start_assistant
 
 sed = logging.getLogger("firebot")
 
@@ -35,7 +35,7 @@ else:
 
 import glob
 
-path = "firebot/modules/*.py"
+path = "beastx/modules/*.py"
 files = glob.glob(path)
 for name in files:
     with open(name) as f:
@@ -44,16 +44,16 @@ for name in files:
         load_module(shortname.replace(".py", ""))
 
 if Config.ENABLE_ASSISTANTBOT == "ENABLE":
-    path = "firebot/modules/assistant/*.py"
+    path = "beastx/modules/assistant/*.py"
     files = glob.glob(path)
     for name in files:
         with open(name) as f:
             path1 = Path(f.name)
             shortname = path1.stem
             start_assistant(shortname.replace(".py", ""))
-    sed.info("firebot And Assistant Bot Have Been Installed Successfully !")
+    sed.info("beastx And Assistant Bot Have Been Installed Successfully !")
 else:
-    sed.info("firebot Has Been Installed Sucessfully !")
+    sed.info("beastx Has Been Installed Sucessfully !")
     sed.info("Hope you will enjoy")
 
 if len(argv) not in (1, 3, 4):
