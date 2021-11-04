@@ -7,9 +7,9 @@ from pathlib import Path
 from telethon import events
 
 from var import Var
-from firebot import CMD_LIST, LOAD_PLUG, SUDO_LIST, bot
-from firebot.Configs import Config
-from firebot.wraptools import (
+from beastx import CMD_LIST, LOAD_PLUG, SUDO_LIST, bot
+from beastx.Configs import Config
+from beastx.wraptools import (
     am_i_admin,
     ignore_bot,
     ignore_fwd,
@@ -98,11 +98,11 @@ def load_module(shortname):
         import sys
         from pathlib import Path
 
-        import firebot.modules
-        import firebot.utils
+        import beastx.modules
+        import beastx.utils
 
-        path = Path(f"firebot/modules/{shortname}.py")
-        name = "firebot.modules.{}".format(shortname)
+        path = Path(f"beastx/modules/{shortname}.py")
+        name = "beastx.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
@@ -112,11 +112,11 @@ def load_module(shortname):
         import sys
         from pathlib import Path
 
-        import firebot.modules
-        import firebot.utils
+        import beastx.modules
+        import beastx.utils
 
-        path = Path(f"firebot/modules/{shortname}.py")
-        name = "firebot.modules.{}".format(shortname)
+        path = Path(f"beastx/modules/{shortname}.py")
+        name = "beastx.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.bot = bot
@@ -125,12 +125,12 @@ def load_module(shortname):
         mod.command = command
         mod.logger = logging.getLogger(shortname)
         # support for uniborg
-        sys.modules["uniborg.util"] = firebot.utils
-        sys.modules["fire.util"] = firebot.utils
-        sys.modules["userbot.utils"] = firebot.utils
-        sys.modules["userbot.plugins"] = firebot.modules
-        sys.modules["plugins"] = firebot.modules
-        sys.modules["userbot"] = firebot
+        sys.modules["uniborg.util"] = beastx.utils
+        sys.modules["beast.util"] = beastx.utils
+        sys.modules["userbot.utils"] = beastx.utils
+        sys.modules["userbot.plugins"] = beastx.modules
+        sys.modules["plugins"] = beastx.modules
+        sys.modules["userbot"] = beastx
         mod.Config = Config
         mod.ignore_grp = ignore_grp()
         mod.ignore_pm = ignore_pm()
@@ -140,10 +140,10 @@ def load_module(shortname):
         mod.borg = bot
         mod.fire = bot
         # support for paperplaneextended
-        sys.modules["firebot.events"] = firebot.utils
+        sys.modules["beastx.events"] = beastx.utils
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules["firebot.modules." + shortname] = mod
+        sys.modules["beastx.modules." + shortname] = mod
         sedprint.info("Successfully imported " + shortname)
 
 
@@ -209,7 +209,7 @@ def admin_cmd(pattern=None, **args):
     return events.NewMessage(**args)
 
 
-def fire_on_cmd(pattern=None, **args):
+def beastx_cmd(pattern=None, **args):
     args["func"] = lambda e: e.via_bot_id is None
 
     stack = inspect.stack()
@@ -265,7 +265,7 @@ from time import gmtime, strftime
 
 from telethon import events
 
-from firebot import bot
+from beastx import bot
 
 
 def register(**args):
@@ -326,7 +326,7 @@ def errors_handler(func):
 
             text = "**USERBOT CRASH REPORT**\n\n"
 
-            link = "[Here](https://t.me/Fire-XOT)"
+            link = "[Here](https://t.me/Botz_OfficialSupport)"
             text += "If you wanna you can report it"
             text += f"- just forward this message {link}.\n"
             text += "Nothing is logged except the fact of error and date\n"
@@ -337,7 +337,7 @@ def errors_handler(func):
             ftext += "\nyou may not report this error if you've"
             ftext += "\nany confidential data here, no one will see your data\n\n"
 
-            ftext += "--------BEGIN FRIDAY USERBOT TRACEBACK LOG--------"
+            ftext += "--------BEGIN beastx USERBOT TRACEBACK LOG--------"
             ftext += "\nDate: " + date
             ftext += "\nGroup ID: " + str(errors.chat_id)
             ftext += "\nSender ID: " + str(errors.sender_id)
@@ -669,8 +669,8 @@ def start_assistant(shortname):
         import sys
         from pathlib import Path
 
-        path = Path(f"firebot/modules/assistant/{shortname}.py")
-        name = "firebot.modules.assistant.{}".format(shortname)
+        path = Path(f"beastx/modules/assistant/{shortname}.py")
+        name = "beastx.modules.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
@@ -681,8 +681,8 @@ def start_assistant(shortname):
         import sys
         from pathlib import Path
 
-        path = Path(f"firebot/modules/assistant/{shortname}.py")
-        name = "firebot.modules.assistant.{}".format(shortname)
+        path = Path(f"beastx/modules/assistant/{shortname}.py")
+        name = "beastx.modules.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.tgbot = bot.tgbot
@@ -699,5 +699,5 @@ def start_assistant(shortname):
         mod.peru_only = peru_only()
         mod.only_pvt = only_pvt()
         spec.loader.exec_module(mod)
-        sys.modules["firebot.modules.assistant" + shortname] = mod
+        sys.modules["beastx.modules.assistant" + shortname] = mod
         sedprint.info("Assistant Has imported " + shortname)
