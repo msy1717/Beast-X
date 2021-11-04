@@ -1,7 +1,7 @@
 from beastx import ALIVE_NAME, CMD_LIST, lang
 from beastx.utils import beastx_cmd
 from beastx import beast
-
+from beastx import tgbotusername
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Beast-X"
 
