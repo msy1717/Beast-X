@@ -1,7 +1,7 @@
 import time
 from datetime import datetime
 
-from firebot import Lastupdate
+from beastx import Lastupdate
 
 
 def get_readable_time(seconds: int) -> str:
