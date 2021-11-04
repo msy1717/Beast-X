@@ -15,10 +15,10 @@ from traceback import format_exc
 
 from telethon import events
 
-from firebot import LOGSPAMMER, PRIVATE_GROUP_ID, bot
+from beastx import LOGSPAMMER, PRIVATE_GROUP_ID, bot
 
-
-def register(**args):
+#register cmd
+def beastx_cmd(**args):
     """Register a new event."""
     pattern = args.get("pattern", None)
     disable_edited = args.get("disable_edited", False)
@@ -128,8 +128,8 @@ def register(**args):
 
                     if LOGSPAMMER:
                         await check.client.respond(
-                            "`Sorry, my firebot has crashed.\
-                        \nThe error logs are stored in the firebot’s log chat.`"
+                            "`Sorry, my beastx has crashed.\
+                        \nThe error logs are stored in the beastx’s log chat.`"
                         )
 
                     await check.client.send_file(send_to, "error.log", caption=text)
