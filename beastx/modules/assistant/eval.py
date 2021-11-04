@@ -12,8 +12,8 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 from telethon.errors import *
-from firebot.Configs import Config
-from firebot import bot
+from beastx.Configs import Config
+from beastx import bot
 
 bot = tgbot
 p= print
