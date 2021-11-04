@@ -14,7 +14,7 @@ from youtube_search import YoutubeSearch
 from beastx import ALIVE_NAME, CMD_HELP, CMD_LIST, lang
 from beastx.function import _deezer_dl, _ytdl
 from beastx.modules import inlinestats
-from beastx import tgbot
+
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 if PMPERMIT_PIC is None:
     WARN_PIC = "https://telegra.ph/file/3dd42b44d10528fa1f925.jpg"
