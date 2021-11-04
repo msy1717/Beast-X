@@ -1,2 +1,0 @@
-# BeaxtX
-Beast-X userBot 
