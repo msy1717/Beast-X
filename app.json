@@ -25,7 +25,7 @@
     },
     "ALIVE_NAME": {
       "description": "Enter Username Here ",
-      "value": ""
+      "value": "God Mrunal"
     },
     "lang": {
       "description": "Leave as en Don’t change ",
@@ -33,15 +33,15 @@
     },    
     "APP_ID": {
       "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": ""
+      "value": "8027196"
     },
     "API_HASH": {
       "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": ""
+      "value": "9b70b20efd67e9b99edc395d78407cfa"
     },
     "PLUGIN_CHANNEL": {
       "description": "Channel Where You Save Your Plugins",
-      "value": ""
+      "value": "-1001753035105"
     },
     "SUDO_USERS": {
       "description": "Enter A User Id Which You Would Like to Use To Control Sudo. Don't Give Your Own ID Or ID Of Users You Don't Trust.",
@@ -50,11 +50,11 @@
     },
     "PRIVATE_GROUP_ID": {
       "description": "A Group ID Where You Want Logging Feature",
-      "value": ""
+      "value": "-466215689"
     },
     "STRING_SESSION": {
       "description": "Get From Repl.run Or Run Locally",
-      "value": ""
+      "value": "1AZWarzoBuzjZ5n6MovhMrEALvOtoTTLnJqLbagP8a49E3G_goCy_Vp_l1O9mKPXVQnsoLAHgWRvwHGlDjyu1H8E_VwlB-c4b6nlg-H4-DYuscw9_CmxSggFX_ZqhAsYc2s4ek0946kWkGzzJXPykcw0ci7r2czAAuWahl3bRmp54rOW7hM45o1J-FHaRksd13Ch2g-3Cb38rHgbTkdveDEyKwKwdupCWm7_Na8lj-Lvy6x-tHk53Ta6dPwgni-MYmIIAC_xFttMaC4eFmJDJJCMWgJN0t7722GQ8l6FQx88SGuhBnCeaE4dS0kWMsNALRI-_onNAoES8wfRd3OOXCTHnuJQKvhI="
     },
     "TESSDATA_PREFIX": {
       "description": "Pytesserct Path. Don't Edit Until You Know What Are You Doing..",
@@ -87,7 +87,7 @@
     },
     "HEROKU_API_KEY": {
       "description": "Go to https://dashboard.heroku.com/account, scroll down and press Reveal API.Required for updater to work.",
-      "value": ""
+      "value": "81a91648-44bb-45a6-9911-d7b81f7a5dc9"
     },
     "HEROKU_APP_NAME": {
       "description": "The Value of App Name you filled in right on top.Required for updater to work.",
@@ -95,11 +95,11 @@
     },
     "TG_BOT_TOKEN_BF_HER": {
       "description": "Needed for inline buttons maker. Make a bot at @BotFather and get the token of your bot. Get it.",
-      "value": ""
+      "value": "2016539804:AAGJl3_BfOipfkg9Siqpli7gTfqyaFjo358"
     },
     "TG_BOT_USER_NAME_BF_HER": {
       "description": "You Telegram Bot Username Here. Needed For Help Module And Cbutton.",
-      "value": ""
+      "value": "@fireXAssistantBot"
     },
     "DOWNLOAD_PFP_URL_CLOCK": {
       "description": "Needed for autopic module. A url that is a preview link of your Profile Pic",
@@ -108,11 +108,11 @@
     },
      "ALIVE_IMAGE": {
       "description": "Enter Image URL for bot pic ",
-      "value": ""
+      "value": "https://telegra.ph/file/525236aa11fe5f13a8e6d.jpg"
     },
      "PMPERMIT_PIC": {
       "description": "Enter Image URL for bot's pmsecurity pic ",
-      "value": ""
+      "value": "https://telegra.ph/file/525236aa11fe5f13a8e6d.jpg"
     },    
     "TZ": {
       "description": "Required for Correct Time on autopic",
