@@ -1,6 +1,6 @@
 from sqlalchemy import BigInteger, Boolean, Column, String, UnicodeText
 
-from firebot.modules.sql_helper import BASE, SESSION
+from beastx.modules.sql_helper import BASE, SESSION
 
 
 class Welcome(BASE):
