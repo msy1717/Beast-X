@@ -11,7 +11,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Beast"
 @borg.on(admin_cmd(pattern="ping$"))
 @borg.on(sudo_cmd(pattern="ping$", allow_sudo=True))
 async def _(event):
-   if event.fwd_from:
+    if event.fwd_from:
         return
     start = datetime.now()
     await event.edit("Pong!")
