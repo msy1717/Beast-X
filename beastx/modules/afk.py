@@ -7,7 +7,7 @@ from datetime import datetime
 from telethon import events
 from telethon.tl import functions, types
 
-from beastx import CMD_HELP, lang
+from beastx import CMD_HELP, lang#op
 from beastx import beast
 global USER_AFK  # pylint:disable=E0602
 global afk_time  # pylint:disable=E0602
