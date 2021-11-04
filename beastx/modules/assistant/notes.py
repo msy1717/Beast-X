@@ -1,8 +1,8 @@
 from telethon import events, utils
 from telethon.tl import types
 
-from firebot.Configs import Config
-from firebot.modules.sql_helper.snips_sql import (
+from beastx.Configs import Config
+from beastx.modules.sql_helper.snips_sql import (
     add_snip,
     get_all_snips,
     get_snips,
