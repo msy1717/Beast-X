@@ -1,1 +1,1 @@
-worker: python3 firebotmain.py
+worker: python3 BeastX.py
