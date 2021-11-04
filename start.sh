@@ -1,4 +1,4 @@
 echo """
-    FIREBOT
+    BeastX OP
 """
-python3 -m firebot
+python3 -m beastx
