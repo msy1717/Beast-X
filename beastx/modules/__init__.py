@@ -1,6 +1,6 @@
 from var import Var
-from firebot.Configs import Config
-from firebot.utils import fire_on_cmd
+from beastx.Configs import Config
+from beastx.utils import beastx_cmd
 
 issudousing = Config.SUDO_USERS
 islogokay = Config.PRIVATE_GROUP_ID
@@ -52,7 +52,7 @@ else:
     dbstats = "Not Fine ❌"
 
 inlinestats = (
-    f"✘ SHOWING Fire-X STATS ✘\n"
+    f"✘ SHOWING Beast-X STATS ✘\n"
     f"VERSION = {currentversion} \n"
     f"DATABASE = {dbstats} \n"
     f"SUDO = {amiusingsudo} \n"
