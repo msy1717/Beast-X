@@ -27,7 +27,7 @@ else:
     session_name = "startup"
     bot = TelegramClient(session_name, Var.APP_ID, Var.API_HASH)
 
-bot = beast
+beast = bot
 from .Configs import Config
 
 Lastupdate = time.time()
