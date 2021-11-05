@@ -1,80 +1,49 @@
+<h2 align="center"><b>OwNeR <a href="https://telegram.dog/Godmrunal">⚡️ ＭＲＵＮＡＬ•🇮🇳•🚀</a></b></h2>
+
+<br>
+
 <p align="center">
-   
-   <a href="https://github.com/TeamEviral/Fire-X">
-      <img src="https://telegra.ph/file/4fd8dcd5319be4e025022.jpg" alt="firex", height="300px",width="300px">
-   </a>
+
+   <a href="https://github.com/msy1717/Beast-X"><img src="https://telegra.ph/file/4a1e0ee716f805cf66777.jpg" alt="Beast X" width=400px></a>
+
    <br>
-   <b>Fire-X UserBot</b><br>
-   <i>The Awaited Bot</i>
+
+   <br>
+
 </p>
- 
-   
-# [Fire-X](https://t.me/FireXUserBot) userbot
 
-The Most Powerful Telegram Userbot.
-This Userbot is Safe to use in Your Telegram Account.
-It is not like the other bots which are being Suspended by Heroku. Hence, it can be deployed to Heroku.
+<h1>Beast X</h1>
 
+<b>Beast X is a telegram userbot that running in python + telethon</b>
 
-## ᑈֆօƈɨǟʟ ՏԵɑԵմՏ օƒ ɮօԵ ᐵ 
+<br>
 
-<p align="left"><a href="https://github.com/TeamEviral/Fire-X/network/members"><img src="https://img.shields.io/github/forks/TeamEviral/Fire-X?label=Forks&logoColor=purple&style=social"></a><p align="left"><a href="https://github.com/TeamEviral/Fire-X/stargazers"><img src="https://img.shields.io/github/stars/TeamEviral/Fire-X?logoColor=red&style=social"></a><p align="left"><a href="https://github.com/TeamEviral/Fire-X"><img src="https://img.shields.io/github/last-commit/TeamEviral/Fire-X?logoColor=brown&style=plastic"></a>
+<br>
 
-# How to Deploy Fire-X Userbot?
-Tutorial Coming soon
-   
-##### Deploy
-<a href="https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FTeamEviral%2Ffire-X&amp;template=https%3A%2F%2Fgithub.com%2Fmsy1717%2FBeast-X" rel="nofollow" style="background-color: initial; box-sizing: border-box; color: #0366d6; text-decoration-line: none;"><img alt="Deploy To Heroku" src="https://camo.githubusercontent.com/83b0e95b38892b49184e07ad572c94c8038323fb/68747470733a2f2f7777772e6865726f6b7563646e2e636f6d2f6465706c6f792f627574746f6e2e737667" style="border-style: none; box-sizing: initial; max-width: 100%;" /></a></div>
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)]( https://github.com/msy1717/Beast-X)
 
+[![AGPLv3 license](https://img.shields.io/badge/License-AGPL%20v3-green.svg)]( https://github.com/msy1717/Beast-X#copyright--license)
 
-### API ID AND API HASH 
-ŦEŁEGŘλM 
-𝙰𝙿𝙿 𝙸𝙳 & 𝙰𝙿𝙸 𝙷𝙰𝚂𝙷 
-FROM 
- ⤵
-   </p><p align="centre"><a href="https://my.telegram.org"> <img src="https://img.shields.io/badge/via_WEBSITE-APP_ID API_HASH-blue?style=for-the-badge&logo=telegram" alt="APIHASH" /></a> 
+[![Stars](https://img.shields.io/github/stars/msy1717/Beast-X?&style=flat-square)]( https://github.com/msy1717/Beast-X/stargazers)
 
+[![Forks](https://img.shields.io/github/forks/msy1717/Beast-X?&style=flat-square)]( https://github.com/msy1717/Beast-X/network/members)
 
+[![Issues Open](https://img.shields.io/github/issues/msy1717/Beast-X?&style=flat-square)]( https://github.com/msy1717/Beast-X/issues)
 
+[![Issues Closed](https://img.shields.io/github/issues-closed/msy1717/Beast-X?&style=flat-square)]( https://github.com/msy1717/Beast-X/issues?q=is:closed)
 
+[![PR Open](https://img.shields.io/github/issues-pr/msy177/Beast-X?&style=flat-square)]( https://github.com/msy1717/Beast-X/pulls)
 
-### SESSION STRING 
-<a href="https://replit.com/@chrisdroid1/Fire-X-String-Gen#main.py"><img alt="Run on Repl.it" src="https://camo.githubusercontent.com/05149b448485553c6f14f6430a45c12dcc79ed3c/68747470733a2f2f7265706c2e69742f62616467652f6769746875622f6a61727669733231303930342f4a6172766973" style="border-style: none; box-sizing: initial; max-width: 100%;" /></a></div>
-#### SAFE TO USE 😌
+[![PR Closed](https://img.shields.io/github/issues-pr-closed/msy1717/Beast-X?&style=flat-square)]( https://github.com/msy1717/Beast-X/pulls?q=is:closed)
 
-# CONFIGS 
-```
+![Repo Size](https://img.shields.io/github/repo-size/msy1717/Beast-X?style=flat-square)
 
+![Last Commit](https://img.shields.io/github/last-commit/msy1717/Beast-X?color=brown&logo=github&logoColor=green&style=for-the-badge)
 
-#important 
-API_ID [+] - YOUR API_ID 
-API_HASH [+] - YOUR API_HASH 
-STRING_SESSION [+] - STRING SESSION 
+<br>
 
-```
-# SUPPORT 
+# Support
 
-<a href="https://telegram.me/FIRE_X_CHANNEL" target="_blank"><img src="https://img.shields.io/badge/Join-Channel-yellow.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/BeastX_Bots"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
 
-<a href="https://telegram.me/FIREXuserbot" target="_blank"><img src="https://img.shields.io/badge/Join-Support%20Group-red.svg?style=for-the-badge&logo=Telegram"></a>
-
-
-#####  Credits 🌹
-
-- [FridayUserBot](https://github.com/DevsExpo/FridayUserBot)❤️ - 
-Most of the Plugins Taken from this Project.. Made possible by this. Full Credits. Full Respect
-
-- [DarkCobra](https://github.com/DARK-COBRA/DARKCOBRA) 😍 - 
-Image Tools Plugins Copied from DC Project.. Credits to DC Team
-
-- [CatUserbot](https://github.com/sandy1709/catuserbot)- 
-Internal Core Plugins taken.. Helped a lot to fix bugs in source.. Full respect
-
-- [Uniborg](https://github.com/SPECIHIDE/UniBorg)- 
-Userbots Made possible. Credits
-
-- [TeleBot](https://github.com/xditya/Telebot)-
-Speed Boosted by the help of this source code.. Credits
-
-- [Black Lightning](https://github.com/Keinshin/Black-lightning)- 
-Got Fun tools from this.. Respect
+<a href="https://t.me/BeastX_Support"><img src="https://img.shields.io/badge/Join-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
