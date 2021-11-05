@@ -21,7 +21,7 @@ if PMPERMIT_PIC is None:
 else:
     WARN_PIC = PMPERMIT_PIC
 LOG_CHAT = Config.PRIVATE_GROUP_ID
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Fire-X"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Beast"
 
 if lang == "si":
 
@@ -116,7 +116,7 @@ if lang == "si":
                 f"**🦹‍♀️ PLUGIN NAME 🦹‍♀️ :** `{plugin_name}` \n{CMD_HELP[plugin_name]}"
             )
         reply_pop_up_alert = help_string
-        reply_pop_up_alert += "\n\n**(C) Fire-X ** ".format(plugin_name)
+        reply_pop_up_alert += "\n\n**(C) Beast-X** ".format(plugin_name)
         if len(reply_pop_up_alert) >= 4096:
             crackexy = "`Pasting Your Help Menu.`"
             await event.answer(crackexy, cache_time=0, alert=True)
@@ -382,7 +382,7 @@ else:
     )
     async def on_plug_in_callback_query_handler(event):
         if not event.query.user_id == bot.uid:
-            sedok = "Who The Fuck Are You? Get Your Own Fire-X ."
+            sedok = "Who The Fuck Are You? Get Your Own Beast-X ."
             await event.answer(sedok, cache_time=0, alert=True)
             return
         plugin_name = event.data_match.group(1).decode("UTF-8")
