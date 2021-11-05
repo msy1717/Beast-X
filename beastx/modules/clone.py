@@ -17,6 +17,7 @@ from telethon.tl.functions.photos import (DeletePhotosRequest,
                                           UploadProfilePhotoRequest)
 from telethon.tl.types import InputPhoto, MessageMediaPhoto, User, Chat, Channel
 from beastx import beast, CMD_HELP , AUTONAME , DEFAULT_BIO , ALIVE_NAME
+from . import *
 BEASTX = " "
 DEFAULTUSER = OWNER_NAME
 DEFAULTUSERBIO = str(DEFAULT_BIO) if DEFAULT_BIO else "Beast is op"
