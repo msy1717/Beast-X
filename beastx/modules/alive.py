@@ -45,10 +45,10 @@ def get_readable_time(seconds: int) -> str:
 uptime = get_readable_time((time.time() - Lastupdate))
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "firebot"
 PM_IMG = Config.ALIVE_IMAGE
-pm_caption = "  __**★Beast-x ɪs ʀᴜɴɴɪɴɢ sᴜᴄᴇssғᴜʟʟʏ★**__\n\n"
+pm_caption = "  __**✧✧ BEAST IS UP AND RUNNING SUCCESSFULLY ✧✧**__\n\n"
 
 pm_caption += f"**━━━━━━━|━━━━━|━━━━━━**\n\n"
-pm_caption += f"                 ◉✿ ᴍᴀsᴛᴇʀ ✿◉\n **f"[{OWNER_NAME}](tg://user?id={OWNER_ID})**\n\n"
+pm_caption += f"◉ᴍᴀsᴛᴇʀ◉:**f"[{OWNER_NAME}](tg://user?id={OWNER_ID})**\n\n"
 pm_caption += f"┏━━━━━━━ɪɴғᴏ━━━━━━━━\n"
 pm_caption += f"┣•➳➠ `ᴛᴇʟᴇᴛʜᴏɴ:` `{version.__version__}` \n"
 pm_caption += f"┣•➳➠ `ᴠᴇʀsɪᴏɴ:` `{currentversion}`\n"
