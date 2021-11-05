@@ -4,7 +4,7 @@ from beastx import ALIVE_NAME, CMD_HELP
 from beastx import beast
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Fire-X"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Beast"
 
 
 @beast.on(admin_cmd(outgoing=True, pattern="kilr( (.*)|$)"))
