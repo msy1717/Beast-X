@@ -3,7 +3,7 @@
 import heroku3
 import re, os
 from var import Var
-from ..utils import admin_cmd
+from beastx import admin_cmd
 from beastx import beast
 MRUNAL = Var.HEROKU_APP_NAME
 SEMX = Var.HEROKU_API_KEY
