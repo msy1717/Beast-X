@@ -1,5 +1,3 @@
-"""Check if firebot alive. If you change these, you become the gayest gay such that even the gay world will disown you."""
-# CREDITS: @WhySooSerious, @Sur_vivor
 import time
 
 from telethon import version
@@ -48,7 +46,7 @@ PM_IMG = Config.ALIVE_IMAGE
 pm_caption = "  __**✧✧ BEAST IS UP AND RUNNING SUCCESSFULLY ✧✧**__\n\n"
 
 pm_caption += f"**━━━━━━━|━━━━━|━━━━━━**\n\n"
-pm_caption += f"◉ᴍᴀsᴛᴇʀ◉:**f"[{OWNER_NAME}](tg://user?id={OWNER_ID})**\n\n"
+pm_caption += f"◉ᴍᴀsᴛᴇʀ◉:**[{OWNER_NAME}](tg://user?id={OWNER_ID})**\n\n"
 pm_caption += f"┏━━━━━━━ɪɴғᴏ━━━━━━━━\n"
 pm_caption += f"┣•➳➠ `ᴛᴇʟᴇᴛʜᴏɴ:` `{version.__version__}` \n"
 pm_caption += f"┣•➳➠ `ᴠᴇʀsɪᴏɴ:` `{currentversion}`\n"
