@@ -1,10 +1,9 @@
 import os
 
-from userbot import CMD_HELP
-from userbot.utils import admin_cmd
+from beastx import CMD_HELP
+from beastx.utils import admin_cmd
 from beastx import beast
 
-from userbot import bot as borg
 @beast.on(admin_cmd(pattern=r"open", outgoing=True))
 
 async def _(event):
