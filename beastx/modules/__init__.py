@@ -5,6 +5,8 @@ from beastx import beast
 from beastx.utils import register as beast_cmd
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 from beastx import CMD_HELP
+OWNER_NAME = beast.me.first_name
+OWNER_ID = beast.me.id
 
 
 issudousing = Config.SUDO_USERS
