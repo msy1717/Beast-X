@@ -11,7 +11,13 @@ from beastx import bot
 from beastx.Configs import Config
 from beastx.utils import load_module, start_assistant
 
-sed = logging.getLogger("firebot")
+sed = logging.getLogger("beastx")
+hmm = '''
+ ____                 _    __  __
+| __ )  ___  __ _ ___| |_  \ \/ /
+|  _ \ / _ \/ _` / __| __|  \  / 
+| |_) |  __/ (_| \__ \ |_   /  \ 
+|____/ \___|\__,_|___/\__| /_/\_\'''
 
 
 async def add_bot(bot_token):
@@ -52,6 +58,7 @@ if Config.ENABLE_ASSISTANTBOT == "ENABLE":
             shortname = path1.stem
             start_assistant(shortname.replace(".py", ""))
     sed.info("beastx And Assistant Bot Have Been Installed Successfully !")
+    sed.info(hmm)
 else:
     sed.info("beastx Has Been Installed Sucessfully !")
     sed.info("Hope you will enjoy")
