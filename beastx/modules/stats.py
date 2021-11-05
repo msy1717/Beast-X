@@ -1,7 +1,7 @@
 from datetime import datetime
 
 from telethon.tl.types import Channel, Chat, User
-from ..util import beastx_cmd
+from uniborg.util import edit_or_reply, beastx_cmd, sudo_cmd
 
 from beastx import CMD_HELP
 from beastx import beast
