@@ -9,6 +9,8 @@ from operator import itemgetter
 from beastx import (HEROKU_APP_NAME, HEROKU_API_KEY, CMD_HELP, BOTLOG, BOTLOG_CHATID)
 from beastx.utils import register as beast_cmd
 from beastx import beast
+from beastx.utils import admin_cmd
+
 heroku = heroku3.from_key(HEROKU_API_KEY)
 heroku_api = "https://api.heroku.com"
 useragent = (
