@@ -1,6 +1,11 @@
 from var import Var
 from beastx.Configs import Config
 from beastx.utils import beastx_cmd
+from beastx import beast
+from beastx.utils import register as beast_cmd
+from ..utils import admin_cmd, edit_or_reply, sudo_cmd
+from beastx import CMD_HELP
+
 
 issudousing = Config.SUDO_USERS
 islogokay = Config.PRIVATE_GROUP_ID
