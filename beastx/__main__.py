@@ -13,6 +13,11 @@ from telethon.tl.functions.messages import AddChatUserRequest
 from beastx.utils import load_module, start_assistant
 botusername = Var.TG_BOT_USER_NAME_BF_HER
 chattt_id = Var.PRIVATE_GROUP_ID
+# Redis
+REDIS_URI = 'redis-17358.c252.ap-southeast-1-1.ec2.cloud.redislabs.com:17358'
+REDIS_PASSWORD = '6nkq7KUJ2p1PYelzW30zXtgG6Afhu1XI'
+sed = logging.getLogger("beastx")
+
 try:
     redis_info = REDIS_URI.split(':')
     udB = redis.StrictRedis(
@@ -29,7 +34,6 @@ except Exception as e:
 
 
 
-sed = logging.getLogger("beastx")
 
 async def autobot():
     if udB.get("BOT_TOKEN"):
