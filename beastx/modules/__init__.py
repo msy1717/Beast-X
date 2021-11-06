@@ -11,8 +11,8 @@ from beastx import CMD_HELP
 OWNER_ID = beast.me.id
 OWNER_NAME = beast.me.first_name
 
-from bs4 import BeautifulSoup
-from random import choice, randrange, shuffle
+#from bs4 import BeautifulSoup
+#from random import choice, randrange, shuffle
 
 
 
