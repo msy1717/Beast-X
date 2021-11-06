@@ -66,7 +66,53 @@ else:
     sed.info("beastx Has Been Installed Sucessfully !")
     sed.info("Hope you will enjoy")
     
-#if config.GET_MSG == "ENABLE":
+
+async def legend():
+
+  
+
+  
+  lol = bot.me.first_name
+
+  LEGENDX = f"""
+
+**Sᴏᴍᴇᴛʜɪɴɢ Hᴀᴘᴘᴇɴᴇᴅ ! Lᴇᴛs Cʜᴇᴄᴋ** 🤔 
+
+`☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎`
+
+**Dɪɴɢ Dᴏɴɢ...** `.\./.\` **Tɪɴɢ Tᴏɴɢ...** `./.\./` **UʟᴛʀᴀX Hᴀs Bᴇᴇɴ Dᴇᴘʟᴏʏᴇᴅ !!**
+
+**Pɪɴɢ Pᴏɴɢ...**
+
+**➥ Mᴀsᴛᴇʀ** `➪` **@{lol}**
+
+**➥ Assɪsᴛᴀɴᴛ** `➪` **@{UL}**
+
+**➥ Sᴜᴘᴘᴏʀᴛ** `➪` **@UltraXchaT**
+
+**➥ Cʜᴀɴɴᴇʟ** `➪` **@UltraX_SupporT**
+
+**Cʜᴇᴄᴋ ᴍᴏɪ Pɪɴɢ ᴛɪᴍᴇ ʙʏ** `.ping` **[Fᴏʀ UsᴇʀBᴏᴛ] or** `/ping` **[Fᴏʀ Assɪsᴛᴀɴᴛ]**
+
+"""
+
+  if config.GET_MSG == "ENABLE"::
+
+    try:
+
+      PROBOYX = [[Button.inline("Hᴇʀᴏᴋᴜ Vᴀʀs", data='ass_back')]]
+
+      
+
+      await bot.send_message(chat_id, LEGENDX, buttons=PROBOYX)
+
+    except:
+
+       pass
+
+  else:
+
+      sed.info("YOUR BOT DEPLOYED SUCCESSFULLY")
  #await bot.send_message(chat_id,MSG)
     
 #else:
