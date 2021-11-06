@@ -66,11 +66,11 @@ else:
     sed.info("beastx Has Been Installed Sucessfully !")
     sed.info("Hope you will enjoy")
     
-if config.GET_MSG == "ENABLE":
- await bot.send_message(chat_id,MSG)
+#if config.GET_MSG == "ENABLE":
+ #await bot.send_message(chat_id,MSG)
     
-else:
-    sed.info("your Get_Msg disable")
+#else:
+   # sed.info("your Get_Msg disable")
     
     
 
