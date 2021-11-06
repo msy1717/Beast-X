@@ -9,6 +9,7 @@ from telethon import TelegramClient
 from var import Var
 from beastx import bot
 from beastx.Configs import Config
+from telethon.tl.functions.messages import AddChatUserRequest
 from beastx.utils import load_module, start_assistant
 
 sed = logging.getLogger("beastx")
@@ -58,6 +59,15 @@ if Config.ENABLE_ASSISTANTBOT == "ENABLE":
 else:
     sed.info("beastx Has Been Installed Sucessfully !")
     sed.info("Hope you will enjoy")
+    #await client(AddChatUserRequest(
+
+    #chat_id,
+
+    #user_to_add,
+
+    #fwd_limit=10  # Allow the user to see the 10 last messages
+
+#))
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
