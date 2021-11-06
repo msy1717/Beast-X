@@ -150,6 +150,7 @@ if ENV:
         TAG_LOG = os.environ.get("TAG_LOG", None)
         DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN", None)
         ENABLE_ASSISTANTBOT = os.environ.get("ENABLE_ASSISTANTBOT", "ENABLE")
+        GET_MSG = os.environ.get("GET_MSG", "ENABLE")
         EMOJI_TO_DISPLAY_IN_HELP = os.environ.get("EMOJI_TO_DISPLAY_IN_HELP", "✘")
         TAG_FEATURE = os.environ.get("TAG_FEATURE", "DISABLE")
         JTM_CHANNEL_ID = int(os.environ.get("JTM_CHANNEL_ID", False))
