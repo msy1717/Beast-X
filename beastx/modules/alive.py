@@ -8,7 +8,7 @@ from beastx.Configs import Config
 from beastx.modules import currentversion
 from beastx import beast
 from telethon.tl.functions.users import GetFullUserRequest
-from . import OWNER_NAME,OWNER_ID
+#from . import OWNER_NAME,OWNER_ID
 
 
 # Functions
