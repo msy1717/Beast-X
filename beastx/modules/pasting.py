@@ -96,7 +96,7 @@ def rpaste(data, ext="txt"):
                 return "#Error : Couldn't paste on any pastebin."
 
 
-@beast_cmd(pattern="ipaste ?(-d|-s|) ?(.*)")
+@beast.on(beastx_cmd(pattern="ipaste ?(-d|-s|) ?(.*)"))
 async def ipaste(e):
     if e.fwd_from:
         return
