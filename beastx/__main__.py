@@ -126,8 +126,8 @@ else:
     bot.tgbot = None
     bot.tgbot = TelegramClient(
         "TG_BOT_TOKEN", api_id=Var.APP_ID, api_hash=Var.API_HASH
-    ).start(bot_token=Var.BOT_TOKEN)
-    bot.loop.run_until_complete(add_bot(Var.BOT_TOKEN))
+    ).start(bot_token=udB.get("BOT_TOKEN"))
+    bot.loop.run_until_complete(add_bot(udB.get("BOT_TOKEN")))
 
 import glob
 
