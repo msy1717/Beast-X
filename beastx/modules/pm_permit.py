@@ -5,7 +5,7 @@ import os
 from telethon import events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 
-from . import OWNER_NAME, CUSTOM_PMPERMIT, lang,ALIVE_NAME
+from beastx import OWNER_NAME, CUSTOM_PMPERMIT, lang,ALIVE_NAME
 from beastx.Configs import Config
 from beastx.utils import admin_cmd
 ALIVE_NAME = OWNER_NAME
