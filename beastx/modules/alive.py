@@ -8,7 +8,7 @@ from beastx.Configs import Config
 from beastx.modules import currentversion
 from beastx import beast
 from telethon.tl.functions.users import GetFullUserRequest
-#from . import OWNER_NAME,OWNER_ID
+from . import OWNER_NAME,OWNER_ID
 
 
 # Functions
@@ -46,7 +46,7 @@ PM_IMG = Config.ALIVE_IMAGE
 pm_caption = "  __**✧✧ BEAST IS UP AND RUNNING SUCCESSFULLY ✧✧**__\n\n"
 
 pm_caption += f"**━━━━━━━|━━━━━|━━━━━━**\n\n"
-pm_caption += f"◉ᴍᴀsᴛᴇʀ◉:**{ALIVE_NAME}**\n\n"#[{OWNER_NAME}](tg://user?id={OWNER_ID})
+pm_caption += f"◉ᴍᴀsᴛᴇʀ◉:**[{OWNER_NAME}](tg://user?id={OWNER_ID})**\n\n"#[{OWNER_NAME}](tg://user?id={OWNER_ID})
 pm_caption += f"┏━━━━━━━ɪɴғᴏ━━━━━━━━\n"
 pm_caption += f"┣•➳➠ `ᴛᴇʟᴇᴛʜᴏɴ:` `{version.__version__}` \n"
 pm_caption += f"┣•➳➠ `ᴠᴇʀsɪᴏɴ:` `{currentversion}`\n"
