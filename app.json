@@ -93,13 +93,13 @@
       "description": "The Value of App Name you filled in right on top.Required for updater to work.",
       "value": ""
     },
-    "REDIS_URI": {
+    "TG_BOT_TOKEN_BF_HER": {
       "description": "Needed for inline buttons maker. Make a bot at @BotFather and get the token of your bot. Get it.",
-      "value": " "
+      "value": "2137683191:AAEQT-UCVNWUwg8hLS9wll_HeWYYVnAiraQ"
     },
-    "REDIS_PASSWORD": {
+    "TG_BOT_USER_NAME_BF_HER": {
       "description": "You Telegram Bot Username Here. Needed For Help Module And Cbutton.",
-      "value": " "
+      "value": "@Beast_XAssistantBot"
     },
     "DOWNLOAD_PFP_URL_CLOCK": {
       "description": "Needed for autopic module. A url that is a preview link of your Profile Pic",
