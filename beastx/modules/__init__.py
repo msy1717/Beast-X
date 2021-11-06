@@ -3,6 +3,8 @@ from beastx.Configs import Config
 from beastx.utils import beastx_cmd
 from beastx import beast
 from beastx.utils import register as beast_cmd
+from telethon.tl.functions.users import GetFullUserRequest
+
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 from beastx import CMD_HELP
 OWNER_NAME = beast.me.first_name
