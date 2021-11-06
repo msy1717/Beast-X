@@ -9,7 +9,6 @@ from beastx import CUSTOM_PMPERMIT, lang,ALIVE_NAME
 from beastx.Configs import Config
 from beastx.utils import admin_cmd
 from . import *
-ALIVE_NAME = OWNER_NAME
 from .sql_helper import pmpermit_sql as pmpermit_sql
 
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
