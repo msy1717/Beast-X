@@ -11,7 +11,8 @@ from beastx import bot
 from beastx.Configs import Config
 from telethon.tl.functions.messages import AddChatUserRequest
 from beastx.utils import load_module, start_assistant
-
+botusername = Var.TG_BOT_USER_NAME_BF_HER
+chattt_id = Var.PRIVATE_GROUP_ID
 
 sed = logging.getLogger("beastx")
 
@@ -57,14 +58,13 @@ if Config.ENABLE_ASSISTANTBOT == "ENABLE":
     sed.info("---------------------------------------")
     sed.info("------------@BeastX_Userbot------------")
     sed.info("---------------------------------------")
-    botusername = Var.TG_BOT_USER_NAME_BF_HER
-    chattt_id = Var.PRIVATE_GROUP_ID
-    await client(AddChatUserRequest(
-    chattt_id,
-    botusername,
-    fwd_limit=10  # Allow the user to see the 10 last messages
+            await client(AddChatUserRequest(
+            chattt_id,
+            botusername,
+            fwd_limit=10  # Allow the user to see the 10 last messages
 
-))
+    ))
+    
     
 else:
     sed.info("beastx Has Been Installed Sucessfully !")
