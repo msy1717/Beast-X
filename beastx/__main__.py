@@ -67,7 +67,7 @@ else:
     sed.info("Hope you will enjoy")
     
 if config.GET_MSG == "ENABLE":
-  await bot.send_message(chat_id,MSG)
+ await bot.send_message(chat_id,MSG)
     
 else:
     sed.info("your Get_Msg disable")
