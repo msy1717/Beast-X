@@ -18,7 +18,8 @@ from telegraph import Telegraph, exceptions, upload_file
 from telethon import TelegramClient
 from telethon.sessions import StringSession
 
-from var import Vartoken = os.environ.get("TG_BOT_TOKEN_BF_HER", None)
+from var import Var
+token = os.environ.get("TG_BOT_TOKEN_BF_HER", None)
 
 xmrunal = TelegramClient("mrunal", API_ID, API_HASH).start(bot_token=token)
 
