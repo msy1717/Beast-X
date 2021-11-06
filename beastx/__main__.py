@@ -12,6 +12,7 @@ from beastx.Configs import Config
 from telethon.tl.functions.messages import AddChatUserRequest
 from beastx.utils import load_module, start_assistant
 
+sed = logging.getLogger("beastx")
 
 
 async def add_bot(bot_token):
