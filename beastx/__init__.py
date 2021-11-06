@@ -21,7 +21,7 @@ from telethon.sessions import StringSession
 from var import Var
 token = os.environ.get("TG_BOT_TOKEN_BF_HER", None)
 
-xmrunal = TelegramClient("mrunal", API_ID, API_HASH).start(bot_token=token)
+xmrunal = TelegramClient("mrunal", Var.APP_ID, Var.API_HASH).start(bot_token=token)
 
 if Var.STRING_SESSION:
     session_name = str(Var.STRING_SESSION)
