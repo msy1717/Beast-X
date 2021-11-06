@@ -96,7 +96,7 @@ async def legend():
 
 """
 
-  if config.GET_MSG == "ENABLE"::
+  if config.GET_MSG == "ENABLE":
 
     try:
 
