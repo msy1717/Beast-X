@@ -60,11 +60,8 @@ else:
     sed.info("beastx Has Been Installed Sucessfully !")
     sed.info("Hope you will enjoy")
     #await client(AddChatUserRequest(
-
     #chat_id,
-
     #user_to_add,
-
     #fwd_limit=10  # Allow the user to see the 10 last messages
 
 #))
