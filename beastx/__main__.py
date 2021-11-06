@@ -58,14 +58,7 @@ if Config.ENABLE_ASSISTANTBOT == "ENABLE":
     sed.info("---------------------------------------")
     sed.info("------------@BeastX_Userbot------------")
     sed.info("---------------------------------------")
-            await client(AddChatUserRequest(
-            chattt_id,
-            botusername,
-            fwd_limit=10  # Allow the user to see the 10 last messages
-
-    ))
-    
-    
+           
 else:
     sed.info("beastx Has Been Installed Sucessfully !")
     sed.info("Hope you will enjoy")
