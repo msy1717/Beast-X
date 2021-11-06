@@ -38,11 +38,6 @@ else:
         bot.start()
         
 import glob
-async def ready():
-    try:
-        
-        MSG = f"**Beast has been deployed!**\n➖➖➖➖➖➖➖➖➖\n**UserMode**: [{bot.me.first_name}](tg://user?id={bot.me.id})\n**Assistant**: @\n➖➖➖➖➖➖➖➖➖\n**Support**: @BeastX_Bots\n"
-        await bot.send_message(chat_id, MSG)
 
         
 path = "beastx/modules/*.py"
