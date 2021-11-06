@@ -2,7 +2,7 @@ import logging
 from pathlib import Path
 from sys import argv
 import var
-
+import redis
 import telethon.utils
 from telethon import TelegramClient
 
