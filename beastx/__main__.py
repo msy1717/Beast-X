@@ -22,9 +22,9 @@ try:
     charset="utf-8",
     decode_responses=True)
 except Exception as e:
-    print("Database errors! Recheck REDIS_URI and REDIS_PASSWORD!!")
-    print(str(e))
-    print("Bot is quiting...")
+    sed.info("Database errors! Recheck REDIS_URI and REDIS_PASSWORD!!")
+    sed.info(str(e))
+    sed.info("Bot is quiting...")
     exit()
 
 
@@ -32,12 +32,12 @@ except Exception as e:
 sed = logging.getLogger("beastx")
 
 async def autobot():
-    if Var.get("BOT_TOKEN"):
+    if udB.get("BOT_TOKEN"):
         return
     if Var.TG_BOT_TOKEN_BF_HER:
         return udB.set("BOT_TOKEN", Var.BOT_TOKEN)
     await bot.start()
-    LOGS.info("MAKING A TELEGRAM BOT FOR YOU AT @BotFather, Kindly Wait")
+    sed.info("MAKING A TELEGRAM BOT FOR YOU AT @BotFather, Kindly Wait")
     who = bot.me
     name = who.OWNER_NAME + "'s Assistant Bot"
     if who.username:
