@@ -7,8 +7,10 @@ from telethon.tl.functions.users import GetFullUserRequest
 
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 from beastx import CMD_HELP
-OWNER_NAME = beast.me.first_name
-OWNER_ID = beast.me.id
+ok = await beast(GetFullUserRequest(event.sender_id))
+
+OWNER_NAME = ok.me.first_name
+OWNER_ID = ok.me.id
 from bs4 import BeautifulSoup
 from random import choice, randrange, shuffle
 
