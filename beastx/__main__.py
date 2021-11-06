@@ -11,7 +11,11 @@ from beastx import bot
 from beastx.Configs import Config
 from telethon.tl.functions.messages import AddChatUserRequest
 from beastx.utils import load_module, start_assistant
+sur = Config.PRIVATE_GROUP_ID
 
+UL = Config.TG_BOT_USER_NAME_BF_HER
+
+chat_id = sur
 sed = logging.getLogger("beastx")
 
 
@@ -32,8 +36,13 @@ else:
         bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
     else:
         bot.start()
+        
 import glob
+async def ready():
+    MSG = f"**Beast has been deployed!**\n➖➖➖➖➖➖➖➖➖\n**UserMode**: [{bot.me.first_name}](tg://user?id={bot.me.id})\n**Assistant**: @\n➖➖➖➖➖➖➖➖➖\n**Support**: @BeastX_Bots\n"
+    await tgbot.send_message(chat_id, MSG)
 
+        
 path = "beastx/modules/*.py"
 files = glob.glob(path)
 for name in files:
