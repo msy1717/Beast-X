@@ -8,8 +8,8 @@ from telethon.tl.functions.users import GetFullUserRequest
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 from beastx import CMD_HELP
 
-#OWNER_ID = beast.me.id
-#OWNER_NAME = beast.me.first_name
+OWNER_ID = beast.me.id
+OWNER_NAME = beast.me.first_name
 
 from bs4 import BeautifulSoup
 from random import choice, randrange, shuffle
