@@ -11,8 +11,6 @@ from beastx import bot
 from beastx.Configs import Config
 from telethon.tl.functions.messages import AddChatUserRequest
 from beastx.utils import load_module, start_assistant
-botusername = Var.TG_BOT_USER_NAME_BF_HER
-chattt_id = Var.PRIVATE_GROUP_ID
 # Redis
 REDIS_URI = 'redis-17358.c252.ap-southeast-1-1.ec2.cloud.redislabs.com:17358'
 REDIS_PASSWORD = '6nkq7KUJ2p1PYelzW30zXtgG6Afhu1XI'
@@ -38,7 +36,7 @@ except Exception as e:
 async def autobot():
     if udB.get("BOT_TOKEN"):
         return
-    if Var.TG_BOT_TOKEN_BF_HER:
+    if Var.BOT_TOKEN:
         return udB.set("BOT_TOKEN", Var.BOT_TOKEN)
     await bot.start()
     sed.info("MAKING A TELEGRAM BOT FOR YOU AT @BotFather, Kindly Wait")
@@ -126,14 +124,10 @@ if len(argv) not in (1, 3, 4):
     bot.disconnect()
 else:
     bot.tgbot = None
-    if Var.BOT_TOKEN is not None:
-        bot.tgbot = TelegramClient(
-            "TG_BOT_TOKEN", api_id=Var.APP_ID, api_hash=Var.API_HASH
-        ).start(bot_token=Var.BOT_TOKEN)
-        bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
-    else:
-        bot.start()
-
+    bot.tgbot = TelegramClient(
+        "TG_BOT_TOKEN", api_id=Var.APP_ID, api_hash=Var.API_HASH
+    ).start(bot_token=Var.BOT_TOKEN)
+    bot.loop.run_until_complete(add_bot(Var.BOT_TOKEN))
 
 import glob
 
