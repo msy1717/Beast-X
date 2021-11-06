@@ -11,6 +11,7 @@ from beastx import bot
 from beastx.Configs import Config
 from telethon.tl.functions.messages import AddChatUserRequest
 from beastx.utils import load_module, start_assistant
+from . import xmrunal
 sur = Config.PRIVATE_GROUP_ID
 
 UL = Config.TG_BOT_USER_NAME_BF_HER
@@ -72,7 +73,7 @@ async def legend():
   
 
   
-  lol = bot.me.first_name
+  lol = xmrunal.me.first_name
 
   LEGENDX = f"""
 
@@ -104,7 +105,7 @@ async def legend():
 
       
 
-      await bot.send_message(chat_id, LEGENDX, buttons=PROBOYX)
+      await xmrunal.send_message(chat_id, LEGENDX, buttons=PROBOYX)
 
     except:
 
