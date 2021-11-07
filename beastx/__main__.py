@@ -4,6 +4,7 @@ from sys import argv
 import var
 import telethon.utils
 from telethon import TelegramClient
+from telethon import events
 import os
 from var import Var
 from beastx import bot
@@ -11,7 +12,6 @@ from beastx.Configs import Config
 from telethon.tl.functions.messages import AddChatUserRequest
 from beastx.utils import load_module, start_assistant
 from . import xmrunal
-from telethon import events
 
 sur = Config.PRIVATE_GROUP_ID
 
@@ -26,6 +26,9 @@ async def add_bot(bot_token):
     await bot.start(bot_token)
     bot.me = await bot.get_me()
     bot.uid = telethon.utils.get_peer_id(bot.me)
+    
+    
+async def send(event):
     await event.xmrunal.send_message(sur, MSG)
 
 if len(argv) not in (1, 3, 4):
