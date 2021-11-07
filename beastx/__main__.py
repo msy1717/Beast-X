@@ -13,9 +13,13 @@ from telethon.tl.functions.messages import AddChatUserRequest
 from beastx.utils import load_module, start_assistant
 import asyncio
 from . import sedmrunal
-semxx = beast.me.username
+from telethon.tl.functions.users import GetFullUserRequest
 
-semxxx = sedmrunal.me.username
+from telethon.tl.functions.users import GetFullUserRequest
+
+semxx = await sedmrunal(GetFullUserRequest('username'))
+
+semxxx = await beast(GetFullUserRequest('username'))
 
 sur = Config.PRIVATE_GROUP_ID
 
