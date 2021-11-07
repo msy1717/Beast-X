@@ -39,7 +39,7 @@ else:
         bot.start()
         
 import glob
-if Config.EXTRA_PLUGS == "ENABLE":
+'''if Config.EXTRA_PLUGS == "ENABLE":
     os.system("git clone https://github.com/ULTRA-OP/ULTRA_PLUGS.git ./beastx/modules/")
     path = "beastx/modules/*.py"
     files = glob.glob(path)
@@ -54,7 +54,7 @@ if Config.EXTRA_PLUGS == "ENABLE":
             except:
                 pass
 
-else:
+else:'''
         
   path = "beastx/modules/*.py"
   files = glob.glob(path)
