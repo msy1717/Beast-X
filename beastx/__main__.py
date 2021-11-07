@@ -7,13 +7,13 @@ from telethon import TelegramClient
 from telethon import events
 import os
 from var import Var
-from beastx import bot
+from . import beast  
 from beastx.Configs import Config
 from telethon.tl.functions.messages import AddChatUserRequest
 from beastx.utils import load_module, start_assistant
 import asyncio
 from . import sedmrunal
-semxx = bot.me.username
+semxx = beast.me.username
 
 semxxx = sedmrunal.me.username
 
