@@ -13,13 +13,35 @@ from telethon.tl.functions.messages import AddChatUserRequest
 from beastx.utils import load_module, start_assistant
 import asyncio
 from . import sedmrunal
+semxx = bot.me.username
+
+semxxx = sedmrunal.me.username
 
 sur = Config.PRIVATE_GROUP_ID
 
 UL = Config.TG_BOT_USER_NAME_BF_HER
 
 chat_id = sur
-MSG = "**Beast has been deployed!**"
+MSG = f"""
+✨𝔹𝕖𝕒𝕤𝕥 ℍ𝕒𝕤 𝔹𝕖𝕖𝕟 𝔻𝕖𝕡𝕝𝕠𝕪𝕖𝕕!
+
+            ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎
+
+┏━━━━━━━━━━━━━━━━━━
+
+┣•Assistant➠ @{semxxx}
+
+┣•User➠ @{semxx}
+
+┣•Support➠ @BeastX_Support
+
+┗━━━━━━━━━━━━━━━━━━
+
+Do `.ping `or` /alive` for check userbot working
+
+"""
+
+
 sed = logging.getLogger("beastx")
 
 
