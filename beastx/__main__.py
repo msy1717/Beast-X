@@ -74,21 +74,21 @@ async def legend():
 
 """
 
-  if config.GET_MSG == "ENABLE":
+if config.GET_MSG == "ENABLE":
 
-    try:
+   try:
 
-      PROBOYX = [[Button.inline("Hᴇʀᴏᴋᴜ Vᴀʀs", data='ass_back')]]
+     PROBOYX = [[Button.inline("Hᴇʀᴏᴋᴜ Vᴀʀs", data='ass_back')]]
 
       
 
-      await xmrunal.send_message(chat_id, LEGENDX, buttons=PROBOYX)
+     await xmrunal.send_message(chat_id, LEGENDX, buttons=PROBOYX)
 
-    except:
+   except:
 
-       pass
+      pass
 
-  else:
+ else:
 
 if Config.ENABLE_ASSISTANTBOT == "ENABLE":
     path = "beastx/modules/assistant/*.py"
