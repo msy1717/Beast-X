@@ -50,33 +50,6 @@ for name in files:
         load_module(shortname.replace(".py", ""))
  
 
-async def lloda():
-  lol = xmrunal.me.first_name
-  om = f"""
-**Sᴏᴍᴇᴛʜɪɴɢ Hᴀᴘᴘᴇɴᴇᴅ ! Lᴇᴛs Cʜᴇᴄᴋ** 🤔 
-
-`☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎`
-
-**➥ Mᴀsᴛᴇʀ** `➪` **@{lol}**
-
-**➥ Assɪsᴛᴀɴᴛ** `➪` **@{UL}**
-
-**➥ Sᴜᴘᴘᴏʀᴛ** `➪` **@BeastX_Support**
-
-**➥ Cʜᴀɴɴᴇʟ** `➪` **@BeastX_Userbot**
-
-**Cʜᴇᴄᴋ ᴍᴏɪ Pɪɴɢ ᴛɪᴍᴇ ʙʏ** `.ping` **[Fᴏʀ UsᴇʀBᴏᴛ] or** `/ping` **[Fᴏʀ Assɪsᴛᴀɴᴛ]**
-
-"""
-import asyncio
-if config.GET_MSG == "ENABLE":
-    try:
-     
-        
-
-      await xmrunal.send_message(chat_id, om)
-    except:
-       pass
         
 if Config.ENABLE_ASSISTANTBOT == "ENABLE":
     path = "beastx/modules/assistant/*.py"
