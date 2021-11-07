@@ -12,7 +12,7 @@ from beastx.Configs import Config
 from telethon.tl.functions.messages import AddChatUserRequest
 from beastx.utils import load_module, start_assistant
 import asyncio
-from . import sedmrunal
+from . import bot
 
 #rom . import semxx,semxxx
 
