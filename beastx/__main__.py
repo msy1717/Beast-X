@@ -11,7 +11,6 @@ from beastx import bot
 from beastx.Configs import Config
 from telethon.tl.functions.messages import AddChatUserRequest
 from beastx.utils import load_module, start_assistant
-from . import xmrunal
 import asyncio
 sur = Config.PRIVATE_GROUP_ID
 
@@ -28,41 +27,6 @@ async def add_bot(bot_token):
     bot.uid = telethon.utils.get_peer_id(bot.me)
     
     
-async def customize():
-
-
-
-    try:
-
-        chat_id = sur
-
-        
-
-           
-
-        sed.info("💥⚡ deploying started")
-
-        
-
-        
-
-            
-
-        
-
-            
-
-        await xmrunal.send_message(
-
-            chat_id,"Beast-X has been deployed"
-
-        )
-        await asyncio.sleep(1)
-    
-
-    except Exception as e:
-
-        sed.exception(e)
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
