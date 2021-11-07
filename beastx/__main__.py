@@ -49,34 +49,11 @@ for name in files:
         path1 = Path(f.name)
         shortname = path1.stem
         load_module(shortname.replace(".py", ""))
-
-if Config.ENABLE_ASSISTANTBOT == "ENABLE":
-    path = "beastx/modules/assistant/*.py"
-    files = glob.glob(path)
-    for name in files:
-        with open(name) as f:
-            path1 = Path(f.name)
-            shortname = path1.stem
-            start_assistant(shortname.replace(".py", ""))
-    sed.info("beastx And Assistant Bot Have Been Installed Successfully !")
-    sed.info("---------------------------------------")
-    sed.info("------------@BeastX_Userbot------------")
-    sed.info("---------------------------------------")
-           
-else:
-    sed.info("beastx Has Been Installed Sucessfully !")
-    sed.info("Hope you will enjoy")
-    
+ 
 
 async def legend():
-
-  
-
-  
   lol = xmrunal.me.first_name
-
   LEGENDX = f"""
-
 **Sᴏᴍᴇᴛʜɪɴɢ Hᴀᴘᴘᴇɴᴇᴅ ! Lᴇᴛs Cʜᴇᴄᴋ** 🤔 
 
 `☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎`
@@ -89,9 +66,9 @@ async def legend():
 
 **➥ Assɪsᴛᴀɴᴛ** `➪` **@{UL}**
 
-**➥ Sᴜᴘᴘᴏʀᴛ** `➪` **@UltraXchaT**
+**➥ Sᴜᴘᴘᴏʀᴛ** `➪` **@BeastX_Support**
 
-**➥ Cʜᴀɴɴᴇʟ** `➪` **@UltraX_SupporT**
+**➥ Cʜᴀɴɴᴇʟ** `➪` **@BeastX_Userbot**
 
 **Cʜᴇᴄᴋ ᴍᴏɪ Pɪɴɢ ᴛɪᴍᴇ ʙʏ** `.ping` **[Fᴏʀ UsᴇʀBᴏᴛ] or** `/ping` **[Fᴏʀ Assɪsᴛᴀɴᴛ]**
 
@@ -112,6 +89,26 @@ async def legend():
        pass
 
   else:
+
+if Config.ENABLE_ASSISTANTBOT == "ENABLE":
+    path = "beastx/modules/assistant/*.py"
+    files = glob.glob(path)
+    for name in files:
+        with open(name) as f:
+            path1 = Path(f.name)
+            shortname = path1.stem
+            start_assistant(shortname.replace(".py", ""))
+    sed.info("beastx And Assistant Bot Have Been Installed Successfully !")
+    sed.info("---------------------------------------")
+    sed.info("------------@BeastX_Userbot------------")
+    sed.info("---------------------------------------")
+           
+else:
+    sed.info("beastx Has Been Installed Sucessfully !")
+    sed.info("Hope you will enjoy")
+    
+
+
 
       sed.info("YOUR BOT DEPLOYED SUCCESSFULLY")
  #await bot.send_message(chat_id,MSG)
