@@ -25,7 +25,7 @@ async def add_bot(bot_token):
     await bot.start(bot_token)
     bot.me = await bot.get_me()
     bot.uid = telethon.utils.get_peer_id(bot.me)
-    
+    await bot.send_message(sur, MSG)
     
 
 if len(argv) not in (1, 3, 4):
