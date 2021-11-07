@@ -14,7 +14,7 @@ from beastx.utils import load_module, start_assistant
 import asyncio
 from . import sedmrunal
 
-from . import semxx,semxxx
+#rom . import semxx,semxxx
 
 
 sur = Config.PRIVATE_GROUP_ID
@@ -29,9 +29,9 @@ MSG = f"""
 
 ┏━━━━━━━━━━━━━━━━━━
 
-┣•Assistant➠ @{semxxx}
+┣•Assistant➠ @{UL}
 
-┣•User➠ @{semxx}
+┣•User➠ @
 
 ┣•Support➠ @BeastX_Support
 
