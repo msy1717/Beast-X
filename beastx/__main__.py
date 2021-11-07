@@ -11,6 +11,8 @@ from beastx.Configs import Config
 from telethon.tl.functions.messages import AddChatUserRequest
 from beastx.utils import load_module, start_assistant
 from . import xmrunal
+from telethon import events
+
 sur = Config.PRIVATE_GROUP_ID
 
 UL = Config.TG_BOT_USER_NAME_BF_HER
@@ -24,7 +26,7 @@ async def add_bot(bot_token):
     await bot.start(bot_token)
     bot.me = await bot.get_me()
     bot.uid = telethon.utils.get_peer_id(bot.me)
-    await event.client.send_message(sur, MSG)
+    await event.xmrunal.send_message(sur, MSG)
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
