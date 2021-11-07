@@ -58,6 +58,11 @@ async def customize():
 
         )
         await asyncio.sleep(1)
+    
+
+    except Exception as e:
+
+        sed.exception(e)
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
