@@ -5,7 +5,10 @@ import os
 import sys
 import time
 from distutils.util import strtobool as sb
-from logging import DEBUG, INFO, basicConfig, getLogger
+from logging import DEBUG, INFO, basicConfig, getLogger 
+
+from telethon.tl.functions.users import GetFullUserRequest
+
 
 import pylast
 import wget
@@ -144,6 +147,9 @@ if bool(ENV):
     # Last.fm Module
     BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
     DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
+    semxx = await sedmrunal(GetFullUserRequest('username'))
+
+    semxxx = await beast(GetFullUserRequest('username'))
 
     LASTFM_API = os.environ.get("LASTFM_API", None)
     LASTFM_SECRET = os.environ.get("LASTFM_SECRET", None)
