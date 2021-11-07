@@ -79,7 +79,7 @@ if config.GET_MSG == "ENABLE":
         PROBOYX = [[Button.inline("Hᴇʀᴏᴋᴜ Vᴀʀs", data='ass_back')]]
         await xmrunal.send_message(chat_id, LEGENDX, buttons=PROBOYX)
     except:    
-        sed.info("---------------------------")
+     sed.info("---------------------------")
 
 if Config.ENABLE_ASSISTANTBOT == "ENABLE":
     path = "beastx/modules/assistant/*.py"
