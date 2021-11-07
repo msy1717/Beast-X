@@ -4,7 +4,7 @@ from sys import argv
 import var
 import telethon.utils
 from telethon import TelegramClient
-
+import os
 from var import Var
 from beastx import bot
 from beastx.Configs import Config
