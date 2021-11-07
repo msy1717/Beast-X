@@ -50,16 +50,12 @@ for name in files:
         load_module(shortname.replace(".py", ""))
  
 
-async def legend():
+async def lloda():
   lol = xmrunal.me.first_name
-  LEGENDX = f"""
+  om = f"""
 **Sᴏᴍᴇᴛʜɪɴɢ Hᴀᴘᴘᴇɴᴇᴅ ! Lᴇᴛs Cʜᴇᴄᴋ** 🤔 
 
 `☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎`
-
-**Dɪɴɢ Dᴏɴɢ...** `.\./.\` **Tɪɴɢ Tᴏɴɢ...** `./.\./` **UʟᴛʀᴀX Hᴀs Bᴇᴇɴ Dᴇᴘʟᴏʏᴇᴅ !!**
-
-**Pɪɴɢ Pᴏɴɢ...**
 
 **➥ Mᴀsᴛᴇʀ** `➪` **@{lol}**
 
@@ -72,13 +68,13 @@ async def legend():
 **Cʜᴇᴄᴋ ᴍᴏɪ Pɪɴɢ ᴛɪᴍᴇ ʙʏ** `.ping` **[Fᴏʀ UsᴇʀBᴏᴛ] or** `/ping` **[Fᴏʀ Assɪsᴛᴀɴᴛ]**
 
 """
-
+import asyncio
 if config.GET_MSG == "ENABLE":
     try:
-      PROBOYX = [[Button.inline("Hᴇʀᴏᴋᴜ Vᴀʀs", data='ass_back')]]
+     
         
 
-      await xmrunal.send_message(chat_id, LEGENDX, buttons=PROBOYX)
+      await xmrunal.send_message(chat_id, om)
     except:
        pass
         
