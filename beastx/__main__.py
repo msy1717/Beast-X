@@ -39,9 +39,9 @@ else:
         bot.start()
         
 import glob
-if  EXTRA_PLUGS == True:
-    os.system("git clone https://github.com/ULTRA-OP/ULTRA_PLUGS.git ./ULTRA/plugins/")
-    path = "ULTRA/plugins/*.py"
+if Config.EXTRA_PLUGS == True:
+    os.system("git clone https://github.com/ULTRA-OP/ULTRA_PLUGS.git ./beastx/modules/")
+    path = "beastx/modules/*.py"
     files = glob.glob(path)
     for name in files:
         with open(name) as a:
@@ -50,7 +50,7 @@ if  EXTRA_PLUGS == True:
             try:
                 load_module(plugin_name.replace(".py", ""))
                 if not plugin_name.startswith("__") or plugin_name.startswith("_"):
-                    print ('INSTALLING ALL MODULES', plugin_name)
+                    sed.info('INSTALLING ALL MODULES', plugin_name)
             except:
                 pass
 
