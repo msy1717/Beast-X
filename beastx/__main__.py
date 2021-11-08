@@ -28,13 +28,9 @@ MSG = f"""
             ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎
 
 ┏━━━━━━━━━━━━━━━━━━
-
-┣•Assistant➠ @{UL}
-
-┣•User➠ @
-
+┣•Assistant➠ @{sedmrunal.me.username}
+┣•User➠ @{bot.me.username}
 ┣•Support➠ @BeastX_Support
-
 ┗━━━━━━━━━━━━━━━━━━
 
 Do `.ping `or` /alive` for check userbot working
