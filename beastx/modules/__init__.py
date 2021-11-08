@@ -13,8 +13,11 @@ OWNER_NAME = beast.me.first_name
 
 from bs4 import BeautifulSoup
 from random import choice, randrange, shuffle
+eor = edit_or_reply
 
-
+async def eod(event, text, **kwargs):
+    kwargs["time"] = kwargs.get("time", 5)
+    return await eor(event, text, **kwargs)
 
 
 issudousing = Config.SUDO_USERS
