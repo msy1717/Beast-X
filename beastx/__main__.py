@@ -80,13 +80,13 @@ if Config.EXTRA_PLUGS == "ENABLE":
 
 else:
         
-path = "beastx/modules/*.py"
-files = glob.glob(path)
-for name in files:
-    with open(name) as f:
-        path1 = Path(f.name)
-        shortname = path1.stem
-        load_module(shortname.replace(".py", ""))
+  path = "beastx/modules/*.py"
+  files = glob.glob(path)
+  for name in files:
+      with open(name) as f:
+          path1 = Path(f.name)
+          shortname = path1.stem
+          load_module(shortname.replace(".py", ""))
  
 
         
