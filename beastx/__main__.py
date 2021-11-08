@@ -64,7 +64,7 @@ else:
         
 import glob
 if Config.EXTRA_PLUGS == "ENABLE":
-    os.system("git clone https://github.com/msy1717/BeastX-Addons.git ./beastx/modules/")
+    os.system("git clone https://github.com/msy1717/BeastX-Addons.git")
     path = "beastx/modules/*.py"
     files = glob.glob(path)
     for name in files:
