@@ -63,8 +63,8 @@ else:
         bot.start()
         
 import glob
-if Config.EXTRA_PLUGS == "ENABLE":
-    os.system("git clone https://github.com/msy1717/BeastX-Addons.git ./beastx/modules/")
+'''if Config.EXTRA_PLUGS == "ENABLE":
+    os.system("git clone https://github.com/msy1717/BeastX-Addons.git ")
     path = "beastx/modules/*.py"
     files = glob.glob(path)
     for name in files:
@@ -78,15 +78,31 @@ if Config.EXTRA_PLUGS == "ENABLE":
             except:
                 pass
 
-else:
-        
-  path = "beastx/modules/*.py"
-  files = glob.glob(path)
-  for name in files:
-      with open(name) as f:
-          path1 = Path(f.name)
-          shortname = path1.stem
-          load_module(shortname.replace(".py", ""))
+else:'''
+async def install():
+    i =0
+    chat = -1001700251224
+    documentss = await bot.get_messages(chat, None , filter=InputMessagesFilterDocument)
+    total = int(documentss.total)
+    total_doxx = range(0, total)
+    for ixo in total_doxx:
+        mxo = documentss[ixo].id
+        downloaded_file_name = await bot.download_media(await bot.get_messages(chat, ids=mxo), "beastx/modules/")
+        if "(" not in downloaded_file_name:
+            path1 = Path(downloaded_file_name)
+            shortname = path1.stem
+            load_module(shortname.replace(".py", ""))
+            sed.info(f'{i} plugin install')
+        else:
+            sed.info("Failed")        
+
+path = "beastx/modules/*.py"
+files = glob.glob(path)
+for name in files:
+    with open(name) as f:
+        path1 = Path(f.name)
+        shortname = path1.stem
+        load_module(shortname.replace(".py", ""))
  
 
         
