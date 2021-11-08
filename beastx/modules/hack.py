@@ -132,14 +132,24 @@ async def _(event):
     MSG += " Don't worry only i can open this 😎😎.. If u don't"
     MSG += f" Believe me, try to download` 🙂\n\n{ME}"
     await xx.edit(MSG)
-CMD_HELP.update(
-    {
-        "": """**Plugin : **`Hack`
-        
-        ✘ Commands Available
 
-• `.hack`
-    Do a Prank With Replied user.
-"""
+    
+        
+        
+        
+
+
+    
+
+
+
+CMD_HELP.update(
+
+    {
+
+        "Hack": "`.hack`\n Do a prank with Replied user"
+        
+
     }
+
 )
