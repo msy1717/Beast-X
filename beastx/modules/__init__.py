@@ -7,6 +7,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 from beastx import CMD_HELP
+import asyncio
 
 OWNER_ID = beast.me.id
 OWNER_NAME = beast.me.first_name
