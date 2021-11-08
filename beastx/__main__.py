@@ -22,14 +22,16 @@ sur = Config.PRIVATE_GROUP_ID
 UL = Config.TG_BOT_USER_NAME_BF_HER
 
 chat_id = sur
+ok = await sedmrunal(GetFullUserRequest(event.sender_id))
+error = await bot(GetFullUserRequest(event.sender_id))
 MSG = f"""
 ✨𝔹𝕖𝕒𝕤𝕥 ℍ𝕒𝕤 𝔹𝕖𝕖𝕟 𝔻𝕖𝕡𝕝𝕠𝕪𝕖𝕕!
 
             ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎
 
 ┏━━━━━━━━━━━━━━━━━━
-┣•Assistant➠ @{sedmrunal.me.username}
-┣•User➠ @{bot.me.username}
+┣•Assistant➠ @{{ok.user.username}}
+┣•User➠ @{{error.user.username}}
 ┣•Support➠ @BeastX_Support
 ┗━━━━━━━━━━━━━━━━━━
 
