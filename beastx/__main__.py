@@ -10,6 +10,8 @@ from var import Var
 from . import beast  
 from beastx.Configs import Config
 from telethon.tl.functions.messages import AddChatUserRequest
+from telethon.tl.functions.users import GetFullUserRequest
+
 from beastx.utils import load_module, start_assistant
 import asyncio
 from . import bot,sedmrunal
