@@ -1,7 +1,7 @@
 from var import Var
 from beastx.Configs import Config
 from beastx.utils import beastx_cmd
-from beastx import beast
+from beastx import beast,sedmrunal
 from beastx.utils import register as beast_cmd
 from telethon.tl.functions.users import GetFullUserRequest
 
