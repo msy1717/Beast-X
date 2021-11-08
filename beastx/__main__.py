@@ -24,8 +24,7 @@ sur = Config.PRIVATE_GROUP_ID
 UL = Config.TG_BOT_USER_NAME_BF_HER
 
 chat_id = sur
-ok = await sedmrunal(GetFullUserRequest(event.sender_id))
-error = await bot(GetFullUserRequest(event.sender_id))
+
 MSG = f"""
 ✨𝔹𝕖𝕒𝕤𝕥 ℍ𝕒𝕤 𝔹𝕖𝕖𝕟 𝔻𝕖𝕡𝕝𝕠𝕪𝕖𝕕!
 
@@ -49,6 +48,8 @@ async def add_bot(bot_token):
     await bot.start(bot_token)
     bot.me = await bot.get_me()
     bot.uid = telethon.utils.get_peer_id(bot.me)
+    ok = await sedmrunal(GetFullUserRequest(event.sender_id))
+    error = await bot(GetFullUserRequest(event.sender_id))
     await sedmrunal.send_message(sur, MSG)
     
 
