@@ -48,8 +48,6 @@ async def add_bot(bot_token):
     await bot.start(bot_token)
     bot.me = await bot.get_me()
     bot.uid = telethon.utils.get_peer_id(bot.me)
-    ok = await sedmrunal(GetFullUserRequest(event.sender_id))
-    error = await bot(GetFullUserRequest(event.sender_id))
     await sedmrunal.send_message(sur, MSG)
     
 
