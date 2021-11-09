@@ -75,7 +75,7 @@ async def a():
 
   try:
 
-     await client.start() ; sed.info("beastx connected") ; o = "client"
+     await bot.start() ; sed.info("beastx connected") ; o = "client"
 
   except:
 
