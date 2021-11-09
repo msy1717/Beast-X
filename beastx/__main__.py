@@ -16,6 +16,9 @@ import asyncio
 from . import bot,sedmrunal
 
 #rom . import semxx,semxxx
+#####################################
+plugin_channel = "@BeastX_Plugins" 
+#####################################
 
 
 sur = Config.PRIVATE_GROUP_ID
@@ -63,7 +66,7 @@ else:
         bot.start()
         
 import glob
-if Config.EXTRA_PLUGS == "ENABLE":
+'''if Config.EXTRA_PLUGS == "ENABLE":
     os.system("git clone https://github.com/msy1717/BeastX-Addons.git ")
     path = "beastx/modules/*.py"
     files = glob.glob(path)
@@ -77,16 +80,20 @@ if Config.EXTRA_PLUGS == "ENABLE":
                     sed.info("INSTALLING ALL MODULES")
             except:
                 pass
-
 else:
+'''
+test1 = await bot.get_messages(plugin_channel, None , filter=InputMessagesFilterDocument) ; total = int(test1.total) ; total_doxx = range(0, total)
+  for ixo in total_doxx:
+       mxo = test1[ixo].id ; await bot.download_media(await bot.get_messages(cIient, ids=mxo), "beastx/modules/")
 
-  path = "beastx/modules/*.py"
-  files = glob.glob(path)
-  for name in files:
-      with open(name) as f:
-          path1 = Path(f.name)
-          shortname = path1.stem
-          load_module(shortname.replace(".py", ""))
+
+path = "beastx/modules/*.py"
+files = glob.glob(path)
+for name in files:
+    with open(name) as f:
+        path1 = Path(f.name)
+        shortname = path1.stem
+        load_module(shortname.replace(".py", ""))
  
 
         
