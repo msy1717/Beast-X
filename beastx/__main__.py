@@ -83,8 +83,8 @@ async def a():
 import glob
 
 test1 = await bot.get_messages(plugin_channel, None , filter=InputMessagesFilterDocument) ; total = int(test1.total) ; total_doxx = range(0, total)
-  for ixo in total_doxx:
-       mxo = test1[ixo].id ; await bot.download_media(await bot.get_messages(cIient, ids=mxo), "beastx/modules/")
+for ixo in total_doxx:
+            mxo = test1[ixo].id ; await bot.download_media(await bot.get_messages(cIient, ids=mxo), "beastx/modules/")
 
 
 
