@@ -15,7 +15,9 @@ from random import choice
 
 from telethon.errors import ChatSendInlineForbiddenError
 
-from plugins.stickertools import deEmojify
+def deEmojify(inputString: str) -> str:
+    """Remove emojis and other non-safe characters from string"""
+    return re.sub(EMOJI_PATTERN, "", inputString)
 
 from . import *
 
