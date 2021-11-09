@@ -91,7 +91,7 @@ async def plud_channel():
                         for i in ar:
                                     br = os.path.basename(i)
                                     cr = (os.path.splitext(br)[0])
-                                    import_module(f"firebot.modules.{cr}")
+                                    import_module(f"beastx.modules.{cr}")
                                     la += 1
                                     sed.info(f" loaded {la}/{f} modules")  
 
