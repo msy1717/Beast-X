@@ -103,4 +103,6 @@ pdf2docx
 beautifulsoup4
 bs4
 skydeo
+textblob
+redis
 
