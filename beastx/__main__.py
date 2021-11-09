@@ -65,7 +65,7 @@ else:
     else:
         bot.start()
         
-async def a():
+'''async def a():
 
   sed.info("Connecting...") ; 
 
@@ -79,9 +79,9 @@ async def a():
 
   except:
 
-    sed.info("Telegram String Session Wrong or Expired Please Add new one ") ; quit(1)
+    sed.info("Telegram String Session Wrong or Expired Please Add new one ") ; quit(1)'''
 import glob
-async def plud_channel():
+'''async def plud_channel():
             test1 = await bot.get_messages(plugin_channel, None , filter=InputMessagesFilterDocument) ; total = int(test1.total) ; total_doxx = range(0, total)
             for ixo in total_doxx:
                  mxo = test1[ixo].id ; await bot.download_media(await bot.get_messages(cIient, ids=mxo), "beastx/modules/")
@@ -103,7 +103,7 @@ async def plud_channel():
                                 load_module(shortname.replace(".py", ""))
 
 
-
+'''
 
         
                         
@@ -126,8 +126,8 @@ async def plud_channel():
 
             
 
-
 '''
+
 ar = glob.glob("beastx/modules/*.py")
 
 f = len(ar)
@@ -145,7 +145,7 @@ for i in ar:
 
    sed.info(f" loaded {la}/{f} modules")  
 
-
+'''
 path = "beastx/modules/*.py"
 files = glob.glob(path)
 for name in files:
@@ -154,7 +154,7 @@ for name in files:
         shortname = path1.stem
         load_module(shortname.replace(".py", ""))
  
-'''
+
         
 if Config.ENABLE_ASSISTANTBOT == "ENABLE":
     path = "beastx/modules/assistant/*.py"
