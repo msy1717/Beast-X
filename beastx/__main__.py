@@ -94,15 +94,20 @@ for ixo in total_doxx:
                         load_module(f"beastx.modules.{cr}")
                         la += 1
                         sed.info(f" loaded {la}/{f} modules")
+                        path = "beastx/modules/*.py"
+                        files = glob.glob(path)
+                        for name in files:
+                            with open(name) as f:
+                                path1 = Path(f.name)
+                                shortname = path1.stem
+                                load_module(shortname.replace(".py", ""))
 
+
+
+
+        
                         
-path = "beastx/modules/*.py"
-files = glob.glob(path)
-for name in files:
-    with open(name) as f:
-        path1 = Path(f.name)
-        shortname = path1.stem
-        load_module(shortname.replace(".py", ""))
+
 
    
 
