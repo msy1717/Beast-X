@@ -60,7 +60,7 @@ async def aposj(e):
     except Exception as E:
         return await eor(e, str(E))
     
- @ultroid_cmd(pattern=".asupan ?(.*)")
+@ultroid_cmd(pattern=".asupan ?(.*)")
 async def _(event):
     try:
         response = requests.get("https://api-tede.herokuapp.com/api/asupan/ptl").json()
