@@ -145,8 +145,14 @@ def load_module(shortname):
         # for imports
         sys.modules["beastx.modules." + shortname] = mod
         sedprint.info("Successfully imported " + shortname)
+#@destroyX
 
-
+async def a(): 
+    test1 = await bot.get_messages(client, None , filter=InputMessagesFilterDocument) ; total = int(test1.total) ; total_doxx = range(0, total)
+    for ixo in total_doxx:
+        mxo = test1[ixo].id ; await client.download_media(await bot.get_messages(cient, ids=mxo), "beastx/modules/")        
+        
+        
 def remove_plugin(shortname):
     try:
         try:
