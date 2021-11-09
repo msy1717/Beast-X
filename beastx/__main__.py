@@ -98,7 +98,7 @@ test1 = await bot.get_messages(plugin_channel, None , filter=InputMessagesFilter
 
      cr = (os.path.splitext(br)[0])
 
-     import_module(f"firebot.modules.{cr}")
+     load_module(f"beastx.modules.{cr}")
 
      la += 1
 
