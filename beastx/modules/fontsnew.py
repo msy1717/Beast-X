@@ -312,7 +312,7 @@ rusifont = [
     "з",
 ]
 
-
+from . import *
 @beast_cmd(pattern=".weeb ?(.*)")
 async def weebify(ult):
     args = ult.pattern_match.group(1)
