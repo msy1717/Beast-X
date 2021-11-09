@@ -83,26 +83,26 @@ async def a():
 import glob
 test1 = await bot.get_messages(plugin_channel, None , filter=InputMessagesFilterDocument) ; total = int(test1.total) ; total_doxx = range(0, total)
 for ixo in total_doxx:
-            mxo = test1[ixo].id ; await bot.download_media(await bot.get_messages(cIient, ids=mxo), "beastx/modules/")
+     mxo = test1[ixo].id ; await bot.download_media(await bot.get_messages(cIient, ids=mxo), "beastx/modules/")
 
 
-  ar = glob.glob("beastx/modules/*.py")
 
-  f = len(ar)
+ar = glob.glob("beastx/modules/*.py")
 
-  sed.info(f" loading {f} modules it may take 1 minute please wait")
+f = len(ar)
 
-  for i in ar:
+sed.info(f" loading {f} modules it may take 1 minute please wait")
+for i in ar:
 
-     br = os.path.basename(i)
+   br = os.path.basename(i)
 
-     cr = (os.path.splitext(br)[0])
+   cr = (os.path.splitext(br)[0])
 
-     load_module(f"beastx.modules.{cr}")
+   load_module(f"beastx.modules.{cr}")
 
-     la += 1
+   la += 1
 
-     sed.info(f" loaded {la}/{f} modules")  
+   sed.info(f" loaded {la}/{f} modules")  
 
 
 path = "beastx/modules/*.py"
