@@ -60,7 +60,7 @@ async def aposj(e):
     except Exception as E:
         return await eor(e, str(E))
     
-@ultroid_cmd(pattern=".asupan ?(.*)")
+@beast_cmd(pattern=".asupan ?(.*)")
 async def _(event):
     try:
         response = requests.get("https://api-tede.herokuapp.com/api/asupan/ptl").json()
@@ -70,7 +70,7 @@ async def _(event):
         await eor(event, "`Something went wrong LOL...`")
 
 
-@ultroid_cmd(pattern=".wibu ?(.*)")
+@beast_cmd(pattern=".wibu ?(.*)")
 async def _(event):
     try:
         response = requests.get("https://api-tede.herokuapp.com/api/asupan/wibu").json()
@@ -80,7 +80,7 @@ async def _(event):
         await eor(event, "`Something went wrong LOL...`")
 
 
-@ultroid_cmd(pattern=".chika ?(.*)")
+@beast_cmd(pattern=".chika ?(.*)")
 async def _(event):
     try:
         response = requests.get("https://api-tede.herokuapp.com/api/chika").json()
