@@ -65,26 +65,44 @@ else:
     else:
         bot.start()
         
+async def a():
+
+  sed.info("Connecting...") ; 
+
+  o = ""
+
+  la = 0
+
+  try:
+
+     await client.start() ; sed.info("beastx connected") ; o = "client"
+
+  except:
+
+    sed.info("Telegram String Session Wrong or Expired Please Add new one ") ; quit(1)
 import glob
-'''if Config.EXTRA_PLUGS == "ENABLE":
-    os.system("git clone https://github.com/msy1717/BeastX-Addons.git ")
-    path = "beastx/modules/*.py"
-    files = glob.glob(path)
-    for name in files:
-        with open(name) as a:
-            patt = Path(a.name)
-            plugin_name = patt.stem
-            try:
-                load_module(plugin_name.replace(".py", ""))
-                if not plugin_name.startswith("__") or plugin_name.startswith("_"):
-                    sed.info("INSTALLING ALL MODULES")
-            except:
-                pass
-else:
-'''
 test1 = await bot.get_messages(plugin_channel, None , filter=InputMessagesFilterDocument) ; total = int(test1.total) ; total_doxx = range(0, total)
   for ixo in total_doxx:
        mxo = test1[ixo].id ; await bot.download_media(await bot.get_messages(cIient, ids=mxo), "beastx/modules/")
+
+
+  ar = glob.glob("beastx/modules/*.py")
+
+  f = len(ar)
+
+  sed.info(f" loading {f} modules it may take 1 minute please wait")
+
+  for i in ar:
+
+     br = os.path.basename(i)
+
+     cr = (os.path.splitext(br)[0])
+
+     import_module(f"firebot.modules.{cr}")
+
+     la += 1
+
+     sed.info(f" loaded {la}/{f} modules")  
 
 
 path = "beastx/modules/*.py"
