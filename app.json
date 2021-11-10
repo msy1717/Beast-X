@@ -54,7 +54,7 @@
     },
     "STRING_SESSION": {
       "description": "Get From Repl.run Or Run Locally",
-      "value": "1AZWarzoBuzjZ5n6MovhMrEALvOtoTTLnJqLbagP8a49E3G_goCy_Vp_l1O9mKPXVQnsoLAHgWRvwHGlDjyu1H8E_VwlB-c4b6nlg-H4-DYuscw9_CmxSggFX_ZqhAsYc2s4ek0946kWkGzzJXPykcw0ci7r2czAAuWahl3bRmp54rOW7hM45o1J-FHaRksd13Ch2g-3Cb38rHgbTkdveDEyKwKwdupCWm7_Na8lj-Lvy6x-tHk53Ta6dPwgni-MYmIIAC_xFttMaC4eFmJDJJCMWgJN0t7722GQ8l6FQx88SGuhBnCeaE4dS0kWMsNALRI-_onNAoES8wfRd3OOXCTHnuJQKvhI="
+      "value": ""
     },
     "TESSDATA_PREFIX": {
       "description": "Pytesserct Path. Don't Edit Until You Know What Are You Doing..",
@@ -95,7 +95,7 @@
     },
     "TG_BOT_TOKEN_BF_HER": {
       "description": "Needed for inline buttons maker. Make a bot at @BotFather and get the token of your bot. Get it.",
-      "value": "2137683191:AAEQT-UCVNWUwg8hLS9wll_HeWYYVnAiraQ"
+      "value": ""
     },
     "TG_BOT_USER_NAME_BF_HER": {
       "description": "You Telegram Bot Username Here. Needed For Help Module And Cbutton.",
