@@ -6,11 +6,10 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 #team mates @danish_00,@Shivam_Patel,@xditya,@The_Siddharth_Nigam
 from telethon.tl.functions.account import UpdateNotifySettingsRequest
 #team mates @danish_00,@Shivam_Patel,@xditya,@The_Siddharth_Nigam
-from userbot.utils import admin_cmd
 #team mates @danish_00,@Shivam_Patel,@xditya,@The_Siddharth_Nigam
-from userbot import bot as javes
 #team mates @danish_00,@Shivam_Patel,@xditya,@The_Siddharth_Nigam
-@javes.on(admin_cmd(pattern="sg ?(.*)"))
+from . import *
+@beast.on(admin_cmd(pattern="sg ?(.*)"))
 #team mates @danish_00,@Shivam_Patel,@xditya,@The_Siddharth_Nigam
 async def _(event):
     if event.fwd_from:
@@ -47,6 +46,5 @@ async def _(event):
              await event.client.send_message(event.chat_id, response3.message)
 CMD_HELP.update({
     "sangmatab Info":
-    "`.sg <reply to user or @usernamr>
-"
+    "`.sg <reply to user or @usernamre> "
 })
