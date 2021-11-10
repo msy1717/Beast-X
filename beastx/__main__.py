@@ -19,7 +19,7 @@ bot = beast
 #####################################
 plugin_channel = "@BeastX_Plugins" 
 #####################################
-
+username = await client.get_entity('username')
 
 sur = Config.PRIVATE_GROUP_ID
 
@@ -34,7 +34,7 @@ MSG = f"""
 
 ┏━━━━━━━━━━━━━━━━━━
 ┣•Assistant➠ {UL}
-┣•User➠**@indo_crackerz**
+┣•User➠**@{username}**
 ┣•Support➠ @BeastX_Support
 ┗━━━━━━━━━━━━━━━━━━
 
