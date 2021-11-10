@@ -14,6 +14,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from beastx.utils import load_module, start_assistant
 import asyncio
 from . import bot,sedmrunal
+bot = beast
 
 #rom . import semxx,semxxx
 #####################################
