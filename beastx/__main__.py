@@ -34,7 +34,7 @@ MSG = f"""
 
 ┏━━━━━━━━━━━━━━━━━━
 ┣•Assistant➠ {UL}
-┣•User➠**sed**
+┣•User➠**{beast.me.username}**
 ┣•Support➠ @BeastX_Support
 ┗━━━━━━━━━━━━━━━━━━
 
