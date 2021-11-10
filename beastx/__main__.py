@@ -15,7 +15,6 @@ from beastx.utils import load_module, start_assistant
 import asyncio
 from . import bot,sedmrunal
 bot = beast
-from beastx.modules import OWNER_ID,OWNER_NAME
 #rom . import semxx,semxxx
 #####################################
 plugin_channel = "@BeastX_Plugins" 
