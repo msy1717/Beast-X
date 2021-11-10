@@ -35,7 +35,7 @@ MSG = f"""
 
 ┏━━━━━━━━━━━━━━━━━━
 ┣•Assistant➠ {UL}
-┣•User➠**[{OWNER_NAME}](tg://user?id={OWNER_ID})**
+┣•User➠**@indo_crackerz**
 ┣•Support➠ @BeastX_Support
 ┗━━━━━━━━━━━━━━━━━━
 
