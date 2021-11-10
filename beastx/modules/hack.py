@@ -23,7 +23,7 @@ from . import *
 async def _(event):
     animation_interval = 0.7
     animation_ttl = range(0, 11)
-    xx = await eor(event, "Installing..")
+    xx = await eor(xx, "Installing..")
     animation_chars = [
         "`Installing Files To Hacked Private Server...`",
         "`Target Selected.`",
@@ -39,11 +39,11 @@ async def _(event):
     ]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
-        await xx.edit(animation_chars[i % 11])
+        await xx.edit("animation_chars[i % 11])
     await asyncio.sleep(2)
     animation_interval = 0.6
     animation_ttl = range(0, 14)
-    await xx.edit("Connecting nd getting combined token from my.telegram.org ")
+    await eor(xx,"Connecting nd getting combined token from my.telegram.org ")
     await asyncio.sleep(1)
     animation_chars = [
         "`root@anon:~#` ",
