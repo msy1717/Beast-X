@@ -37,7 +37,7 @@ async def _(event):
                 await asyncio.sleep(3)
                 await er.reply(f"/q {col}")
             response = await response
-            await ultroid_bot.send_read_acknowledge(chat)
+            await beast.send_read_acknowledge(chat)
         except YouBlockedUserError:
             return await event.reply("```Please unblock @QuotLyBot and try again```")
         if response.text.startswith("Hi!"):
