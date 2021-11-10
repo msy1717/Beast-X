@@ -1,7 +1,7 @@
 from telethon import events
-from beastx.util import admin_cmd
+from beastx.utils import admin_cmd
 from beastx import beast as borg
-
+from . import *
 @borg.on(admin_cmd(pattern="copy"))
 async def _(event):
     if event.fwd_from:
