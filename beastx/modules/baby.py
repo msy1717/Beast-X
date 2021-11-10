@@ -7,6 +7,7 @@ import sys
 from beastx.utils import admin_cmd
 import random
 from beastx import beast as borg
+from . import *
 img1=("https://telegra.ph/file/2479b98d08eed6308dfba.mp4")
 img2=("https://telegra.ph/file/f81f5ecbcb5ad7c07c093.mp4")
 img3=("https://telegra.ph/file/a8feefcdfc6adcda499bf.mp4")
