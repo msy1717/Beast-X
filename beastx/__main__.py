@@ -33,7 +33,7 @@ MSG = f"""
 
 ┏━━━━━━━━━━━━━━━━━━
 ┣•Assistant➠ {UL}
-┣•User➠**@{username}**
+┣•User➠**@{Config.ALIVE_NAME}**
 ┣•Support➠ @BeastX_Support
 ┗━━━━━━━━━━━━━━━━━━
 
