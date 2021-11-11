@@ -53,7 +53,7 @@ pm_caption += f"┣•➳➠ `ᴠᴇʀsɪᴏɴ:` `{currentversion}`\n"
 pm_caption += f"┣•➳➠ `ᴜᴘᴛɪᴍᴇ:` `{uptime}`\n"
 pm_caption += f"┗━━━━━━━━━━━━━━━━━━━\n"
 pm_caption += f" ||•|| sᴇᴄᴜʀɪᴛʏ ʙʏ Beast-x ||•||\n"
-pm_caption += " [ɢɪᴛʜᴜʙ](https://github.com/msy1717/Beast-X) • "
+
 
 
 @beast.on(beastx_cmd(pattern=r"alive"))
