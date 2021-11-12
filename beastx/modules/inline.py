@@ -67,9 +67,11 @@ if lang == "si":
                 ],
             )
             await event.answer([result])
+            
      
 
-INLINE_PIC = "https://telegra.ph/file/d9c9bc13647fa1d96e764.jpg"
+
+
 
 
 
@@ -77,7 +79,7 @@ INLINE_PIC = "https://telegra.ph/file/d9c9bc13647fa1d96e764.jpg"
 
           
 
-    @tgbot.on(
+   @tgbot.on(
         events.callbackquery.CallbackQuery(  # pylint:disable=E0602
             data=re.compile(b"helpme_next\((.+?)\)")
         )
