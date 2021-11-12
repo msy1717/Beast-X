@@ -71,27 +71,9 @@ if lang == "si":
 
 INLINE_PIC = "https://telegra.ph/file/d9c9bc13647fa1d96e764.jpg"
 
-@tgbot.on(events.InlineQuery(pattern=r"repo (.*)"))
 
-async def repo(e):
 
-    res = [
-
-        await e.builder.article(
-
-            title="BEAST-X Userbot",
-
-            description="Userbot | Telethon",
-
-            thumb=wb(INLINE_PIC, 0, "image/jpeg", [])
-
-            text="• Beast •",
-
-            buttons=SUP_BUTTONS
-
-        )
-
-    ]
+    
 
           
 
