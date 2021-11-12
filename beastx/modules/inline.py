@@ -69,7 +69,7 @@ if lang == "si":
             await event.answer([result])
      
 
-INLINE_PIC = "https://telegra.ph/file/d9c9bc13647fa1d96e764.jpg""
+INLINE_PIC = "https://telegra.ph/file/d9c9bc13647fa1d96e764.jpg"
 
 @tgbot.on(events.InlineQuery(pattern=r"repo (.*)"))
 
