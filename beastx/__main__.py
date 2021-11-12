@@ -34,7 +34,7 @@ MSG = f"""
 
 ┏━━━━━━━━━━━━━━━━━
 ┣•Assistant➠ {UL}
-┣•User➠ {DL}
+┣•Status➠ `Running`
 ┣•Version➠ {VR}
 ┗━━━━━━━━━━━━━━━━━
 
