@@ -4,7 +4,7 @@ from sys import argv
 import var
 import telethon.utils
 from telethon import TelegramClient
-from telethon import events
+from telethon import events,Button
 import os
 from var import Var
 from . import beast  
@@ -23,7 +23,8 @@ plugin_channel = "@BeastX_Plugins"
 sur = Config.PRIVATE_GROUP_ID
 
 UL = Config.TG_BOT_USER_NAME_BF_HER
-
+DL = Config.ALIVE_NAME
+VR = "Beast 0.1"
 chat_id = sur
 
 MSG = f"""
@@ -31,11 +32,11 @@ MSG = f"""
 
             ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎
 
-┏━━━━━━━━━━━━━━━━━━
+┏━━━━━━━━━━━━━━━━━
 ┣•Assistant➠ {UL}
-┣•User➠**@indo_crackerz**
-┣•Support➠ @BeastX_Support
-┗━━━━━━━━━━━━━━━━━━
+┣•User➠ {DL}
+┣•Version➠ {VR}
+┗━━━━━━━━━━━━━━━━━
 
 Do `.ping `or` /alive` for check userbot working
 
@@ -49,7 +50,14 @@ async def add_bot(bot_token):
     await bot.start(bot_token)
     bot.me = await bot.get_me()
     bot.uid = telethon.utils.get_peer_id(bot.me)
-    await sedmrunal.send_message(sur, MSG)
+    await sedmrunal.send_message(sur, MSG,
+                                 buttons=[
+
+                        [Button.url("⭐Updates", url="https://t.me/BeastX_Userbot")],
+
+                        [Button.url("⚡Support",url="https://t.me/BeastX_Support)]
+
+                    ]))
     
 
 if len(argv) not in (1, 3, 4):
