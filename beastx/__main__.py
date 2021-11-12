@@ -54,7 +54,7 @@ async def add_bot(bot_token):
                                  
                                   buttons=[
 
-                        [Button.url("⭐Updates", url="https://t.me/BeastX_Userbot")],
+                        [Button.url("⭐Updates", url="https://t.me/BeastX_Userbot")]
 
                         [Button.url("⚡Support",url="https://t.me/BeastX_Support")]
 
