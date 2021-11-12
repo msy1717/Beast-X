@@ -83,7 +83,7 @@ async def repo(e):
 
             description="Userbot | Telethon",
 
-            thumb=wb(INLINE_PIC, 0, "image/jpeg, []),
+            thumb=wb(INLINE_PIC, 0, "image/jpeg, [])
 
             text="• Beast •",
 
