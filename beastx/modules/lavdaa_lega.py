@@ -14,15 +14,15 @@ PICS_STR = []
 
 @beast.on(sudo_cmd(pattern=r"logo ?(.*)", allow_sudo=True))
 
-async def lg1(event):
+async def lg1(mewevent):
 
-    event = await eor(event, "Processing.....")
+    event = await eor(mewevent, "`Processing.....`")
 
-    fnt = await get_font_file(event.client, "@BeastXFonts")
+    fnt = await get_font_file(mewevent.client, "@BeastXFonts")
 
-    if event.reply_to_msg_id:
+    if mewevent.reply_to_msg_id:
 
-        rply = await event.get_reply_message()
+        rply = await mewevent.get_reply_message()
 
         logo_ = await rply.download_media()
 
@@ -40,7 +40,7 @@ async def lg1(event):
 
         logo_ = await pic.download_media()
 
-    text = event.pattern_match.group(1)
+    text = mewevent.pattern_match.group(1)
 
     if len(text) <= 8:
 
@@ -62,7 +62,7 @@ async def lg1(event):
 
     if not text:
 
-        await eod(event, "Give some text to make a logo !!")
+        await eod(event, "`Give Name too` !!")
 
         return
 
@@ -108,7 +108,7 @@ async def lg1(event):
 
     await bot.send_file(
 
-        event.chat_id,
+        mewevent.chat_id,
 
         file_name,
 
@@ -145,9 +145,9 @@ async def get_font_file(client, channel_id):
     font_file_message = random.choice(font_file_message_s)
 
     return await client.download_media(font_file_message)
-  
-  
-  
+
+        
+        
   
   
   
