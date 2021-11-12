@@ -87,9 +87,9 @@ async def repo(e):
 
             text="• Beast •",
 
-            buttons=SUP_BUTTONS,
+            buttons=SUP_BUTTONS
 
-        ),
+        )
 
     ]
 
