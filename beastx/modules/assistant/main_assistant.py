@@ -60,8 +60,8 @@ async def start(event):
             caption=starttext,
             link_preview=False,
             buttons=[
-                [custom.Button.inline("Deploy your Fire-X", data="deploy")],
-                [Button.url("Contact Dev ❓", "t.me/Mrkahno")],
+                [custom.Button.inline("Deploy your Beast-X", data="deploy")],
+                [Button.url("Contact Dev ❓", "t.me/Godmrunal")],
             ],
         )
         if os.path.exists(mypic):
