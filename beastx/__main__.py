@@ -23,7 +23,7 @@ plugin_channel = "@BeastX_Plugins"
 sur = Config.PRIVATE_GROUP_ID
 
 UL = Config.TG_BOT_USER_NAME_BF_HER
-DL = Config.ALIVE_NAME
+
 VR = "Beast 0.1"
 chat_id = sur
 
