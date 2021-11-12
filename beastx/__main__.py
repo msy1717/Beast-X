@@ -52,15 +52,13 @@ async def add_bot(bot_token):
     bot.uid = telethon.utils.get_peer_id(bot.me)
     await sedmrunal.send_message(sur, MSG,
                                  
-                                  Buttons = [
+                                  buttons=[
 
-    [
+                        [Button.url("⭐Updates", url="https://t.me/BeastX_Userbot")],
 
-        Button.url("⭐Updates", url="https://t.me/BeastX_Userbot"),
+                        [Button.url("⚡Support",url="https://t.me/BeastX_Support")]
 
-        Button.url("⚡Support", url="https://t.me/BeastX_Support")]
-
-    ]
+                    ])
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
