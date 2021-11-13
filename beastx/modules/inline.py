@@ -90,7 +90,7 @@ if lang == "si":
                     [Button.url(text="Your text here", url="t.me/Godmrunal")],
                 ],
              ) 
-             await event.answer([result])
+            await event.answer([result])
 
     @tgbot.on(
         events.callbackquery.CallbackQuery(  # pylint:disable=E0602
