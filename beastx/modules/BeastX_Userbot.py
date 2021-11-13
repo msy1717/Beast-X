@@ -8,7 +8,7 @@ from beastx.utils import beastx_cmd
 
 from beastx import beast
 
-@beast_cmd(pattern=".repoo ?(.*)")
+@beast_cmd(pattern=".repo ?(.*)")
 
 async def repohand(event):
 
