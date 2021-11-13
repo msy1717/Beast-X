@@ -28,17 +28,17 @@ if lang == "si":
 
     async def inline_handler(event):
 
-    if query.text=="repo":
+      if query.text=="repo":
 
-        result=query.builder.article('repo',
+          result=query.builder.article('repo',
 
-        text='tesring repo plug',buttons=[
+          text='tesring repo plug',buttons=[
 
-        [Button.inline("sed")]
+          [Button.inline("sed")]
 
-         ])
+          ])
 
-        await query.answer([answer])
+          await query.answer([answer])
 
     @tgbot.on(events.InlineQuery)
     async def inline_handler(event):
