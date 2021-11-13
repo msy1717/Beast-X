@@ -24,21 +24,8 @@ LOG_CHAT = Config.PRIVATE_GROUP_ID
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Beast"
 
 if lang == "si":
-    @tgbot.on(events.InlineQuery)
-
-    async def inline_handler(event):
-
-      if query.text=="repo":
-
-          result=query.builder.article('repo',
-
-          text='tesring repo plug',buttons=[
-
-          [Button.inline("sed")]
-
-          ])
-
-          await query.answer([answer])
+    
+          
 
     @tgbot.on(events.InlineQuery)
     async def inline_handler(event):
@@ -94,7 +81,7 @@ if lang == "si":
     @tgbot.on(events.InlineQuery)
     async def iquery(query):
         if query.text =='repo':
-            result=query.builder.article('repo' ,text='• 𝗕𝗲𝗮𝘀𝘁-𝗫 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 [•](https://telegra.ph/file/a6c797b401aa251495221.jpg)*',buttons = [ [ Button.url("• Repo •", url="https://github.com/msy1717/Beast-X"), Button.url("• ꜱᴜᴘᴘᴏʀᴛ •", url="https://t.me/BeastX_Support")],])     
+            result=query.builder.article('repo' ,text='• 𝗕𝗲𝗮𝘀𝘁-𝗫 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 [•](https://telegra.ph/file/a6c797b401aa251495221.jpg)',buttons = [ [ Button.url("• Repo •", url="https://github.com/msy1717/Beast-X"), Button.url("• ꜱᴜᴘᴘᴏʀᴛ •", url="https://t.me/BeastX_Support")],])     
                                                                                   
             await query.answer([result])
     @tgbot.on(
@@ -371,23 +358,7 @@ else:
                 ],
             )
             await event.answer([result])
-        elif event.query.user_id== bot.uid and query.startswith("repo"):
-
-            result = builder.article("•Beast-X Userbot•",
-
-                file=WARN_PIC,
-
-                text=query,
-
-                buttons=[
-
-                    [Button.url(text="Your text here", url="t.me/Godmrunal")],
-
-                ],
-
-             ) 
-
-            await event.answer([result])
+        
 
     @tgbot.on(events.InlineQuery)
 
