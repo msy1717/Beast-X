@@ -366,7 +366,7 @@ else:
 
         if query.text =='repo':
 
-            result=query.builder.article('repo',text='• 𝗕𝗲𝗮𝘀𝘁-𝗫 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 [•](https://telegra.ph/file/a6c797b401aa251495221.jpg)*',buttons = [ [ Button.url("• repo •", url="https://github.com/msy1717/Beast-X"), Button.url("• ꜱᴜᴘᴘᴏʀᴛ •", url="https://t.me/BeastX_Support")],])
+            result=query.builder.article('repo',text='• 𝗕𝗲𝗮𝘀𝘁-𝗫 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 [•](https://telegra.ph/file/a6c797b401aa251495221.jpg)',buttons = [ [ Button.url("• repo •", url="https://github.com/msy1717/Beast-X"), Button.url("• ꜱᴜᴘᴘᴏʀᴛ •", url="https://t.me/BeastX_Support")],])
             await query.answer([result])            
 
     @tgbot.on(
