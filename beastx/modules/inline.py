@@ -93,8 +93,9 @@ if lang == "si":
             await event.answer([result])
     @tgbot.on(events.InlineQuery)
     async def iquery(query):
-        result=query.builder.article('help',text='sed this is demo')
-        await query.answer([result])
+        if query.text =='help':
+            result=query.builder.article('help',text='sed this is demo')
+            await query.answer([result])
     @tgbot.on(
         events.callbackquery.CallbackQuery(  # pylint:disable=E0602
             data=re.compile(b"helpme_next\((.+?)\)")
