@@ -82,15 +82,15 @@ if lang == "si":
                 ],
             )
             await event.answer([result])
-       elif event.query.user_id== bot.uid and query.startswith("repo"):
-           result = builder.photo(
-               file=WARN_PIC,
-               text=query,
-               buttons=[
-                   [Button.url(text="Your text here", url="t.me/Godmrunal")],
-               ],
-            ) 
-            await event.answer([result])
+        elif event.query.user_id== bot.uid and query.startswith("repo"):
+            result = builder.photo(
+                file=WARN_PIC,
+                text=query,
+                buttons=[
+                    [Button.url(text="Your text here", url="t.me/Godmrunal")],
+                ],
+             ) 
+             await event.answer([result])
 
     @tgbot.on(
         events.callbackquery.CallbackQuery(  # pylint:disable=E0602
