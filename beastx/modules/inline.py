@@ -24,6 +24,21 @@ LOG_CHAT = Config.PRIVATE_GROUP_ID
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Beast"
 
 if lang == "si":
+    @tgbot.on(events.InlineQuery)
+
+    async def inline_handler(event):
+
+    if query.text=="repo":
+
+        result=query.builder.article('repo',
+
+        text='tesring repo plug',buttons=[
+
+        [Button.inline("sed")]
+
+         ])
+
+        await query.answer([answer])
 
     @tgbot.on(events.InlineQuery)
     async def inline_handler(event):
