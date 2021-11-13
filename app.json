@@ -1,17 +1,17 @@
 {
-  "name": "ғɪʀᴇ-x",
+  "name": "𝘽𝙚𝙖𝙨𝙩-x",
   "description": "A Remix of Userbots on Github By chrisdroid1 and other unmentioned devs",
-  "logo": "https://telegra.ph/file/8dfa5e4e768a586b1005d.jpg",
+  "logo": "https://telegra.ph/file/a6c797b401aa251495221.jpg",
   "keywords": [
     "telegram",
-    "fire-x",
+    "Beast-x",
     "plugin",
-    "telegram-firebot",
+    "telegram-Beast",
     "productivity"
   ],
   "repository": "https://github.com/TeamEviral/Fire-X",
-  "website": "t.me/FIRE_X_CHANNEL",
-  "success_url": "t.me/FIRE_X_CHANNEL",
+  "website": "t.me/BeastX_Userbot",
+  "Support": "t.me/BeastX_Support",
   "stack": "container",
   "env": {
     "ENV": {
@@ -20,7 +20,7 @@
     },
     "TEMP_DOWNLOAD_DIRECTORY": {
       "description": "Where downloaded files will go.",
-      "value": "./firebot/DOWNLOADS/",
+      "value": "./beastx/DOWNLOADS/",
       "required": false
     },
     "ALIVE_NAME": {
@@ -33,11 +33,11 @@
     },    
     "APP_ID": {
       "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": "8027196"
+      "value": ""
     },
     "API_HASH": {
       "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": "9b70b20efd67e9b99edc395d78407cfa"
+      "value": ""
     },
     "PLUGIN_CHANNEL": {
       "description": "Channel Where You Save Your Plugins",
@@ -50,7 +50,7 @@
     },
     "PRIVATE_GROUP_ID": {
       "description": "A Group ID Where You Want Logging Feature",
-      "value": "-466215689"
+      "value": ""
     },
     "STRING_SESSION": {
       "description": "Get From Repl.run Or Run Locally",
@@ -87,7 +87,7 @@
     },
     "HEROKU_API_KEY": {
       "description": "Go to https://dashboard.heroku.com/account, scroll down and press Reveal API.Required for updater to work.",
-      "value": "81a91648-44bb-45a6-9911-d7b81f7a5dc9"
+      "value": ""
     },
     "HEROKU_APP_NAME": {
       "description": "The Value of App Name you filled in right on top.Required for updater to work.",
@@ -99,7 +99,7 @@
     },
     "TG_BOT_USER_NAME_BF_HER": {
       "description": "You Telegram Bot Username Here. Needed For Help Module And Cbutton.",
-      "value": "@Beast_XAssistantBot"
+      "value": ""
     },
     "DOWNLOAD_PFP_URL_CLOCK": {
       "description": "Needed for autopic module. A url that is a preview link of your Profile Pic",
@@ -108,15 +108,15 @@
     },
      "ALIVE_IMAGE": {
       "description": "Enter Image URL for bot pic ",
-      "value": "https://telegra.ph/file/525236aa11fe5f13a8e6d.jpg"
+      "value": "https://telegra.ph/file/a6c797b401aa251495221.jpg"
     },
      "PMPERMIT_PIC": {
       "description": "Enter Image URL for bot's pmsecurity pic ",
-      "value": "https://telegra.ph/file/525236aa11fe5f13a8e6d.jpg"
+      "value": "https://telegra.ph/file/c33ed6c01759d8d0e801e.jpg"
     },    
     "TZ": {
       "description": "Required for Correct Time on autopic",
-      "value": "Asia/Colombo",
+      "value": "Asia/India",
       "required": false
     }
   },
