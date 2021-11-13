@@ -94,7 +94,8 @@ if lang == "si":
     @tgbot.on(events.InlineQuery)
     async def iquery(query):
         if query.text =='repo':
-            result=query.builder.article('help',text='sed this is demo',buttons = [ [ Button.url("Updates", url="https://t.me/Botz_Official"), Button.url("ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/BotzOfficial_Support")],]))
+            result=query.builder.article('help',text='sed this is demo',buttons = [ [ Button.url("Updates", url="https://t.me/Botz_Official"), Button.url("ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/BotzOfficial_Support")],])     
+                                                                                  
             await query.answer([result])
     @tgbot.on(
         events.callbackquery.CallbackQuery(  # pylint:disable=E0602
@@ -394,7 +395,7 @@ else:
 
         if query.text =='repo':
 
-            result=query.builder.article('repo',text='sed this is demo',buttons = [ [ Button.url("Updates", url="https://t.me/Botz_Official"), Button.url("ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/BotzOfficial_Support")],]))
+            result=query.builder.article('repo',text='sed this is demo',buttons = [ [ Button.url("Updates", url="https://t.me/Botz_Official"), Button.url("ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/BotzOfficial_Support")],])
 
             await query.answer([result])            
 
