@@ -83,9 +83,9 @@ if lang == "si":
             )
             await event.answer([result])
         elif event.query.user_id== bot.uid and query.startswith("repo"):
-            result = builder.photo(
+            result = builder.article("•Beast-X Userbot•",
                 file=WARN_PIC,
-                text="*•Beast-X Userbot•*",
+                text=query,
                 buttons=[
                     [Button.url(text="Your text here", url="t.me/Godmrunal")],
                 ],
