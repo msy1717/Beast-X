@@ -342,7 +342,7 @@ else:
         elif event.query.user_id == bot.uid and query == "stats":
             result = builder.article(
                 title="Stats",
-                text=f"**Showing Stats For {DEFAULTUSER}'s Fire-X** \nNote --> Only Owner Can Check This \n(C) Beast-X",
+                text=f"**Showing Stats For {DEFAULTUSER}'s Beast-X** \nNote --> Only Owner Can Check This \n(C) Beast-X",
                 buttons=[
                     [custom.Button.inline("Show Stats ?", data="terminator")],
                     [
@@ -370,6 +370,33 @@ else:
                 ],
             )
             await event.answer([result])
+        elif event.query.user_id== bot.uid and query.startswith("repo"):
+
+            result = builder.article("•Beast-X Userbot•",
+
+                file=WARN_PIC,
+
+                text=query,
+
+                buttons=[
+
+                    [Button.url(text="Your text here", url="t.me/Godmrunal")],
+
+                ],
+
+             ) 
+
+            await event.answer([result])
+
+    @tgbot.on(events.InlineQuery)
+
+    async def iquery(query):
+
+        if query.text =='help':
+
+            result=query.builder.article('help',text='sed this is demo')
+
+            await query.answer([result])            
 
     @tgbot.on(
         events.callbackquery.CallbackQuery(  # pylint:disable=E0602
