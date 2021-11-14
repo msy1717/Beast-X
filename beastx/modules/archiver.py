@@ -148,7 +148,7 @@ async def _(event):
             await borg.send_file(
                 event.chat_id,
                 output,
-                caption="TAR By Fire-X",
+                caption="TAR By Beast-X",
                 force_document=True,
                 allow_cache=False,
                 reply_to=event.message.id,
