@@ -227,7 +227,7 @@ if lang == "si":
         await event.answer("Back", cache_time=0, alert=False)
         # This Is Copy of Above Code. (C) @SpEcHiDe
         buttons = paginate_help(0, CMD_HELP, "helpme")
-        sed = f"""Fire-X Modules Are Listed Here !\n
+        sed = f"""Beast-X Modules Are Listed Here !\n
     For More Help or Support contact {DEFAULTUSER} \nCurrently Loaded Plugins: {len(CMD_LIST)}\nCurrently using Language - Sinhala (Sinhalese)"""
         await event.edit(message=sed, buttons=buttons)
 
