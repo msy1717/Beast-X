@@ -26,3 +26,4 @@ Commands in animation1 are
  
 Function : **send random gallli to chat"""
     }
+)
