@@ -6,8 +6,8 @@ from beastx.Configs import Config
 """Bans Spammers/Scammer At time Of Arrival 
 If You Add Him The Bot Won't Restrict."""
 
-
-@borg.on(ChatAction)
+from . import *
+@beast.on(ChatAction)
 async def ok(event):
     juser = await event.get_user()
     if Config.ANTISPAM_FEATURE != "ENABLE":
