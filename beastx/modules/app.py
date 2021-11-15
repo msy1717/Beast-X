@@ -10,7 +10,7 @@ import requests
 from .. import CMD_HELP
 from ..utils import edit_or_reply, beast_cmd, sudo_cmd
 
-
+from . import *
 @beast.on(beast_cmd(pattern="app (.*)"))
 @beast.on(sudo_cmd(pattern="app (.*)", allow_sudo=True))
 async def apk(event):
