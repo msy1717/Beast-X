@@ -51,7 +51,7 @@
 
 # String
 
-[![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://repl.it/@Javes786/Javes-20-String-session#main.py)
+[![Run on Repl.it](https://replit.com/@MrunalYeole/BeastX)]
 
 
 # Credit
