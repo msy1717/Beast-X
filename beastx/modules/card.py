@@ -4,7 +4,7 @@ from beastx import bot as beast
 
 from ..utils import admin_cmd as wtf
 
-
+from . import *
 @beast.on(wtf("card"))
 async def _beastt(bst):
     cyber = dc()
