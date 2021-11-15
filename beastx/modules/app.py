@@ -8,7 +8,7 @@ import bs4
 import requests
 
 from .. import CMD_HELP
-from ..utils import edit_or_reply, beast_cmd, sudo_cmd
+from ..utils import edit_or_repl, sudo_cmd
 
 from . import *
 @beast.on(beast_cmd(pattern="app (.*)"))
