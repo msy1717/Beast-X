@@ -1,6 +1,6 @@
 from telethon.events import ChatAction
 
-from beastx import beast, sclient,bot
+from beastx import bot, sclient
 from beastx.Configs import Config
 
 """Bans Spammers/Scammer At time Of Arrival 
