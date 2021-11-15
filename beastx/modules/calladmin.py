@@ -1,9 +1,9 @@
 """.admin Plugin for @UniBorg"""
 from telethon.tl.types import ChannelParticipantsAdmins
-from uniborg.util import fire_on_cmd
+from beastx.util import beastx_cmd
 
 from beastx import CMD_HELP
-
+from . import *
 
 @beast.on(beastx_cmd(pattern="admins"))
 async def _(event):
