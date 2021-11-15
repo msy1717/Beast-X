@@ -8,7 +8,7 @@ from telethon.tl.custom import Dialog
 from telethon.tl.types import Channel, Chat, User
 
 from beastx import CMD_HELP
-from beastx.utils import fire_on_cmd
+from . import *
 
 logging.basicConfig(
     format="[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s", level=logging.WARNING
