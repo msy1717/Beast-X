@@ -3,7 +3,7 @@ import re
 
 import requests
 from bs4 import BeautifulSoup
-
+from . import *
 from beastx import CMD_HELP
 from beastx.utils import admin_cmd
 
