@@ -1,6 +1,5 @@
 """.admin Plugin for @UniBorg"""
 from telethon.tl.types import ChannelParticipantsAdmins
-from beastx.util import beastx_cmd
 
 from beastx import CMD_HELP
 from . import *
