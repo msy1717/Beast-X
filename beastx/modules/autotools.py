@@ -14,7 +14,7 @@ from telethon.tl import functions
 from beastx import CMD_HELP
 
 from ..utils import admin_cmd, edit_or_reply
-
+from . import *
 AUTONAME = os.environ.get("AUTONAME", None)
 DEFAULT_BIO = os.environ.get("DEFAULTBIO", None)
 DEFAULTUSERBIO = str(DEFAULT_BIO) if DEFAULT_BIO else " ᗯᗩᏆᎢᏆᑎᏀ ᏞᏆᏦᗴ ᎢᏆᗰᗴ  "
