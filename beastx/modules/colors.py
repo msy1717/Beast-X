@@ -7,7 +7,7 @@ from PIL import Image, ImageColor
 from beastx import CMD_HELP
 from beastx.utils import beastx_cmd
 
-
+from . import *
 @beast.on(beastx_cmd(pattern="color (.*)"))
 async def _(event):
     if event.fwd_from:
