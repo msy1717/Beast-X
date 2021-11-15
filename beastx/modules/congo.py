@@ -1,6 +1,5 @@
 import random
 
-from uniborg.util import edit_or_reply
 from . import *
 
 
