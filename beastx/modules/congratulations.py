@@ -1,7 +1,6 @@
 import random
 
-from uniborg.util import edit_or_reply, beastx_cmd, sudo_cmd
-
+from . import *
 from beastx import CMD_HELP
 
 RUNSREACTS = [
