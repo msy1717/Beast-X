@@ -2,8 +2,7 @@
 Syntax: .coinflip [optional_choice]"""
 import random
 
-from uniborg.util import beastx_cmd
-
+from . import *
 from beastx import CMD_HELP
 
 
