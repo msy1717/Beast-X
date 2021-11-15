@@ -8,7 +8,7 @@ from telethon.tl.functions.channels import LeaveChannelRequest
 from beastx import CMD_HELP
 from beastx.utils import beastx_cmd, sudo_cmd
 
-
+from . import *
 @beast.on(beastx_cmd("leave"))
 @beast.on(sudo_cmd("leave", allow_sudo=True))
 async def leave(e):
