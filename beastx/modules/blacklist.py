@@ -12,7 +12,7 @@ from beastx.utils import edit_or_reply, beastx_cmd, sudo_cmd
 
 from .sql_helper import blacklist_sql as sql
 
-
+from . import *
 @beast.on(events.NewMessage(incoming=True))
 async def on_new_message(event):
     # TODO: exempt admins from locks
