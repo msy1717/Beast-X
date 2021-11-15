@@ -6,7 +6,7 @@ import os
 import numpy as np
 from pydub import AudioSegment
 from telethon import types
-
+from . import *
 from beastx.utils import admin_cmd
 
 
