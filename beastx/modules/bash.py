@@ -4,7 +4,7 @@ import time
 
 from beastx import CMD_HELP
 from beastx.utils import edit_or_reply, beastx_cmd, sudo_cmd
-
+from . import *
 
 @beast.on(beastx_cmd(pattern="bash ?(.*)"))
 @beast.on(sudo_cmd(pattern="bash ?(.*)", allow_sudo=True))
