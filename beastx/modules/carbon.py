@@ -13,7 +13,7 @@ from beastx.utils import beastx_cmd
 
 CARBONLANG = "auto"
 LANG = "en"
-
+from . import *
 
 @beast.on(beastx_cmd(pattern="carbon"))
 async def carbon_api(e):
