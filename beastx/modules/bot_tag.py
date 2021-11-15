@@ -3,7 +3,7 @@ from telethon.tl.types import Chat
 from telethon.utils import get_display_name
 
 from beastx.Configs import Config
-
+from . import *
 
 @beast.on(
     events.NewMessage(
