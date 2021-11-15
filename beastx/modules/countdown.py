@@ -4,7 +4,7 @@ import asyncio
 
 from telethon import events
 from uniborg.util import beastx_cmd
-
+from . import *
 
 @beast.on(beastx_cmd(pattern="(f?c)d "))
 async def timer_blankx(e):
@@ -58,7 +58,7 @@ async def timer_blankx(e):
         await e.edit(txt + "NaN")
 
 
-@fire.on(events.NewMessage(outgoing=True, pattern="^\.(f?p)an "))
+@beast.on(events.NewMessage(outgoing=True, pattern="^\.(f?p)an "))
 async def timer_blankx(e):
 
     txt = e.text[7:] + "\n\n`Promoting You As Admin In` "
