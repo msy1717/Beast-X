@@ -13,7 +13,7 @@ from beastx.utils import beastx_cmd
 
 loggy_grp = Config.PRIVATE_GROUP_ID
 
-
+from . import *
 @beast.on(beastx_cmd(pattern="addch ?(.*)"))
 async def _(event):
     input_chnnl = event.pattern_match.group(1)
