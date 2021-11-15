@@ -14,9 +14,9 @@ from beastx import CMD_HELP
 
 from ..utils import admin_cmd
 
-
-# @borg.on(events.NewMessage(pattern=r"\.karb ", outgoing=True))
-@borg.on(admin_cmd(pattern="karb"))
+from . import *
+# @beast.on(events.NewMessage(pattern=r"\.carb ", outgoing=True))
+@beast.on(admin_cmd(pattern="karb"))
 async def carbon_api(e):
     RED = random.randint(0, 256)
     GREEN = random.randint(0, 256)
@@ -121,7 +121,7 @@ async def carbon_api(e):
 
 CMD_HELP.update(
     {
-        "carbonRBG": ".karb <reply to text> "
+        "carbonRBG": ".carb <reply to text> "
         "\nCreate a cool random colorful carbon image for that text 😂😂(not work in media)"
     }
 )
