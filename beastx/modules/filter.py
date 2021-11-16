@@ -5,7 +5,7 @@ Available Commands:
 .clearfilter"""
 import asyncio
 import re
-
+from . import *
 from telethon import utils
 from telethon.tl import types
 
