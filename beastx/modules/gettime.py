@@ -7,7 +7,7 @@ async def gn(event):
     if event.fwd_from:
         return
     current_time = datetime.now().strftime(
-        "CURRENT DATE & TIME \nLOCATION: Sri Lanka \nTime: %H:%M:%S \nDate: %d.%m.%y"
+        "CURRENT DATE & TIME \nLOCATION: India \nTime: %H:%M:%S \nDate: %d.%m.%y"
     )
     datetime.now()
     input_str = event.pattern_match.group(1)
