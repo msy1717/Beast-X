@@ -1,5 +1,4 @@
 import requests
-from uniborg.util import fire_on_cmd
 
 from . import *
 
