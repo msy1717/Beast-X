@@ -1,345 +1,75 @@
-# Ported Nd Modified For Ultroid
-# Ported From DarkCobra (Modified by @ProgrammingError)
-#
-# Ultroid - UserBot
-# Copyright (C) 2020 TeamUltroid
-#
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
-
-
-
-
-
-
-
 import asyncio
-import os
-import textwrap
 
-import cv2
-from PIL import Image, ImageDraw, ImageFont
-
+from telethon.errors.rpcerrorlist import YouBlockedUserError
+from telethon.tl.types import MessageMediaPhoto
 from . import *
+thumb_image_path = Config.TMP_DOWNLOAD_DIRECTORY + "/thumb_image.jpg"
 
 
-@beast_cmd(pattern=".mmf ?(.*)")
-async def ultd(event):
-    ureply = await event.get_reply_message()
-    msg = event.pattern_match.group(1)
-    if not (ureply and (ureply.media)):
-        xx = await eor(event, "`Reply to any media`")
+@beast.on(beastx_cmd("mmf ?(.*)"))
+async def _(event):
+    hmm = event.chat_id
+    if event.fwd_from:
         return
-    if not msg:
-        xx = await eor(event, "`Give me something text to write...`")
+    if not event.reply_to_msg_id:
+        await event.edit("`Syntax: reply to an image with .mmf And Text `")
         return
-    ultt = await ureply.download_media()
-    if ultt.endswith((".tgs")):
-        xx = await eor(event, "`Ooo Animated Sticker 👀...`")
-        cmd = ["lottie_convert.py", ultt, "ult.png"]
-        file = "ult.png"
-        process = await asyncio.create_subprocess_exec(
-            *cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
+    reply_message = await event.get_reply_message()
+    if not reply_message.media:
+        await event.edit("```reply to a image/sticker/gif```")
+        return
+    reply_message.sender
+    if reply_message.sender.bot:
+        await event.edit("```Reply to actual users message.```")
+        return
+    else:
+        await event.edit(
+            "```Transfiguration Time! Mwahaha memifying this image! (」ﾟﾛﾟ)｣ ```"
         )
-        stdout, stderr = await process.communicate()
-        stderr.decode().strip()
-        stdout.decode().strip()
-    elif ultt.endswith((".webp", ".png")):
-        xx = await eor(event, "`Processing`")
-        im = Image.open(ultt)
-        im.save("ult.png", format="PNG", optimize=True)
-        file = "ult.png"
-    else:
-        xx = await eor(event, "`Processing`")
-        img = cv2.VideoCapture(ultt)
-        heh, lol = img.read()
-        cv2.imwrite("ult.png", lol)
-        file = "ult.png"
-    stick = await draw_meme_text(file, msg)
-    await event.client.send_file(
-        event.chat_id, stick, force_document=False, reply_to=event.reply_to_msg_id
-    )
-    await xx.delete()
-    try:
-        os.remove(ultt)
-        os.remove(file)
-        os.remove(stick)
-    except BaseException:
-        pass
+    await borg.download_file(reply_message.media)
+
+    async with borg.conversation("@TgMemeRobot") as conv:
+        try:
+            kekbruh = event.pattern_match.group(1)
+            await conv.send_message("/start")
+            await asyncio.sleep(1)
+            await conv.send_message("/create")
+            await asyncio.sleep(1)
+            await conv.send_file(reply_message.media)
+            await asyncio.sleep(3)
+            await conv.send_message(kekbruh)
+            response = await conv.get_response()
+            await conv.mark_read(message=response)
+            den = response.media
+            await beast.send_file(hmm, den)
+        except YouBlockedUserError:
+            await event.reply("```Please unblock @TgMemeRobot and try again```")
+            return
+        if response.text.startswith("Forward"):
+            await event.edit(
+                "```can you kindly disable your forward privacy settings for good nibba?```"
+            )
+        if "This is" in response.text:
+            await event.edit(
+                "```🤨 NANI?! This is not an image! This will take sum tym to convert to image owo 🧐```"
+            )
 
 
-async def draw_meme_text(image_path, msg):
-    img = Image.open(image_path)
-    os.remove(image_path)
-    i_width, i_height = img.size
-    if "_" in msg:
-        text, font = msg.split("_")
-    else:
-        text = msg
-        font = "default"
-    if ";" in text:
-        upper_text, lower_text = text.split(";")
-    else:
-        upper_text = text
-        lower_text = ""
-    draw = ImageDraw.Draw(img)
-    m_font = ImageFont.truetype(
-        f"resources/fonts/{font}.ttf", int((70 / 640) * i_width)
-    )
-    current_h, pad = 10, 5
-    if upper_text:
-        for u_text in textwrap.wrap(upper_text, width=15):
-            u_width, u_height = draw.textsize(u_text, font=m_font)
-            draw.text(
-                xy=(((i_width - u_width) / 2) - 1, int((current_h / 640) * i_width)),
-                text=u_text,
-                font=m_font,
-                fill=(0, 0, 0),
-            )
-            draw.text(
-                xy=(((i_width - u_width) / 2) + 1, int((current_h / 640) * i_width)),
-                text=u_text,
-                font=m_font,
-                fill=(0, 0, 0),
-            )
-            draw.text(
-                xy=((i_width - u_width) / 2, int(((current_h / 640) * i_width)) - 1),
-                text=u_text,
-                font=m_font,
-                fill=(0, 0, 0),
-            )
-            draw.text(
-                xy=(((i_width - u_width) / 2), int(((current_h / 640) * i_width)) + 1),
-                text=u_text,
-                font=m_font,
-                fill=(0, 0, 0),
-            )
-            draw.text(
-                xy=((i_width - u_width) / 2, int((current_h / 640) * i_width)),
-                text=u_text,
-                font=m_font,
-                fill=(255, 255, 255),
-            )
-            current_h += u_height + pad
-    if lower_text:
-        for l_text in textwrap.wrap(lower_text, width=15):
-            u_width, u_height = draw.textsize(l_text, font=m_font)
-            draw.text(
-                xy=(
-                    ((i_width - u_width) / 2) - 1,
-                    i_height - u_height - int((80 / 640) * i_width),
-                ),
-                text=l_text,
-                font=m_font,
-                fill=(0, 0, 0),
-            )
-            draw.text(
-                xy=(
-                    ((i_width - u_width) / 2) + 1,
-                    i_height - u_height - int((80 / 640) * i_width),
-                ),
-                text=l_text,
-                font=m_font,
-                fill=(0, 0, 0),
-            )
-            draw.text(
-                xy=(
-                    (i_width - u_width) / 2,
-                    (i_height - u_height - int((80 / 640) * i_width)) - 1,
-                ),
-                text=l_text,
-                font=m_font,
-                fill=(0, 0, 0),
-            )
-            draw.text(
-                xy=(
-                    (i_width - u_width) / 2,
-                    (i_height - u_height - int((80 / 640) * i_width)) + 1,
-                ),
-                text=l_text,
-                font=m_font,
-                fill=(0, 0, 0),
-            )
-            draw.text(
-                xy=(
-                    (i_width - u_width) / 2,
-                    i_height - u_height - int((80 / 640) * i_width),
-                ),
-                text=l_text,
-                font=m_font,
-                fill=(255, 255, 255),
-            )
-            current_h += u_height + pad
-    imag = "ultt.webp"
-    img.save(imag, "WebP")
-    return imag
+def is_message_image(message):
+    if message.media:
+        if isinstance(message.media, MessageMediaPhoto):
+            return True
+        if message.media.document:
+            if message.media.document.mime_type.split("/")[0] == "image":
+                return True
+        return False
+    return False
 
 
-@beast_cmd(pattern=".mms ?(.*)")
-async def mms(event):
-    ureply = await event.get_reply_message()
-    msg = event.pattern_match.group(1)
-    if not (ureply and (ureply.media)):
-        xx = await eor(event, "`Reply to any media`")
-        return
-    if not msg:
-        xx = await eor(event, "`Give me something text to write 😑`")
-        return
-    ultt = await ureply.download_media()
-    if ultt.endswith((".tgs")):
-        xx = await eor(event, "`Ooo Animated Sticker 👀...`")
-        cmd = ["lottie_convert.py", ultt, "ult.png"]
-        file = "ult.png"
-        process = await asyncio.create_subprocess_exec(
-            *cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
-        )
-        stdout, stderr = await process.communicate()
-        stderr.decode().strip()
-        stdout.decode().strip()
-    elif ultt.endswith((".webp", ".png")):
-        xx = await eor(event, "`Processing`")
-        im = Image.open(ultt)
-        im.save("ult.png", format="PNG", optimize=True)
-        file = "ult.png"
-    else:
-        xx = await eor(event, "`Processing`")
-        img = cv2.VideoCapture(ultt)
-        heh, lol = img.read()
-        cv2.imwrite("ult.png", lol)
-        file = "ult.png"
-    pic = await draw_meme(file, msg)
-    await event.client.send_file(
-        event.chat_id, pic, force_document=False, reply_to=event.reply_to_msg_id
-    )
-    await xx.delete()
-    try:
-        os.remove(ultt)
-        os.remove(file)
-    except BaseException:
-        pass
-    os.remove(pic)
-
-
-async def draw_meme(image_path, msg):
-    img = Image.open(image_path)
-    os.remove(image_path)
-    i_width, i_height = img.size
-    if "_" in msg:
-        text, font = msg.split("_")
-    else:
-        text = msg
-        font = "default"
-    if ";" in text:
-        upper_text, lower_text = text.split(";")
-    else:
-        upper_text = text
-        lower_text = ""
-    draw = ImageDraw.Draw(img)
-    m_font = ImageFont.truetype(
-        f"resources/fonts/{font}.ttf", int((70 / 640) * i_width)
-    )
-    current_h, pad = 10, 5
-    if upper_text:
-        for u_text in textwrap.wrap(upper_text, width=15):
-            u_width, u_height = draw.textsize(u_text, font=m_font)
-            draw.text(
-                xy=(((i_width - u_width) / 2) - 1, int((current_h / 640) * i_width)),
-                text=u_text,
-                font=m_font,
-                fill=(0, 0, 0),
-            )
-            draw.text(
-                xy=(((i_width - u_width) / 2) + 1, int((current_h / 640) * i_width)),
-                text=u_text,
-                font=m_font,
-                fill=(0, 0, 0),
-            )
-            draw.text(
-                xy=((i_width - u_width) / 2, int(((current_h / 640) * i_width)) - 1),
-                text=u_text,
-                font=m_font,
-                fill=(0, 0, 0),
-            )
-            draw.text(
-                xy=(((i_width - u_width) / 2), int(((current_h / 640) * i_width)) + 1),
-                text=u_text,
-                font=m_font,
-                fill=(0, 0, 0),
-            )
-            draw.text(
-                xy=((i_width - u_width) / 2, int((current_h / 640) * i_width)),
-                text=u_text,
-                font=m_font,
-                fill=(255, 255, 255),
-            )
-            current_h += u_height + pad
-    if lower_text:
-        for l_text in textwrap.wrap(lower_text, width=15):
-            u_width, u_height = draw.textsize(l_text, font=m_font)
-            draw.text(
-                xy=(
-                    ((i_width - u_width) / 2) - 1,
-                    i_height - u_height - int((20 / 640) * i_width),
-                ),
-                text=l_text,
-                font=m_font,
-                fill=(0, 0, 0),
-            )
-            draw.text(
-                xy=(
-                    ((i_width - u_width) / 2) + 1,
-                    i_height - u_height - int((20 / 640) * i_width),
-                ),
-                text=l_text,
-                font=m_font,
-                fill=(0, 0, 0),
-            )
-            draw.text(
-                xy=(
-                    (i_width - u_width) / 2,
-                    (i_height - u_height - int((20 / 640) * i_width)) - 1,
-                ),
-                text=l_text,
-                font=m_font,
-                fill=(0, 0, 0),
-            )
-            draw.text(
-                xy=(
-                    (i_width - u_width) / 2,
-                    (i_height - u_height - int((20 / 640) * i_width)) + 1,
-                ),
-                text=l_text,
-                font=m_font,
-                fill=(0, 0, 0),
-            )
-            draw.text(
-                xy=(
-                    (i_width - u_width) / 2,
-                    i_height - u_height - int((20 / 640) * i_width),
-                ),
-                text=l_text,
-                font=m_font,
-                fill=(255, 255, 255),
-            )
-            current_h += u_height + pad
-    pics = "ultt.png"
-    img.save(pics, "png")
-    return pics
 CMD_HELP.update(
     {
-        "memify": """✘ Commands Available -
-
-• `.mmf <upper text> ; <lower text> <reply to media>`
-    To create memes as sticker,
-    for trying different fonts use (.mmf <text>_1)(u can use 1 to 10).
-
-• `.mms <upper text> ; <lower text> <reply to media>`
-    To create memes as pic,
-    for trying different fonts use (.mms <text>_1)(u can use 1 to 10).
-
-"""
-      
-      
+        "memify": "**Memify**\
+\n\n**Syntax : **`.mmf <Reply to an image/sticker and mention uppertext;lowertext>`\
+\n**Usage :** create memes easily with this plugin."
     }
 )
