@@ -4,7 +4,7 @@ from datetime import datetime
 
 import requests
 
-frpm . import *
+from . import *
 
 firethumb = "./resources/IMG_20210719_203714_817.jpg"
 
