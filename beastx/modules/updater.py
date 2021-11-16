@@ -127,7 +127,7 @@ async def update(event, repo, ups_rem, ac_br):
         "`Successfully Updated!\n" "Bot is restarting... Wait for a second!`"
     )
     # Spin a new instance of bot
-    args = [sys.executable, "-m", "userbot"]
+    args = [sys.executable, "-m", "beastx"]
     execle(sys.executable, *args, environ)
     return
 
