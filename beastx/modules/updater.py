@@ -14,7 +14,7 @@ from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 from . import *
 HEROKU_APP_NAME = Var.HEROKU_APP_NAME
 HEROKU_API_KEY = Var.HEROKU_API_KEY
-UPSTREAM_REPO_BRANCH = "master"
+UPSTREAM_REPO_BRANCH = "main"
 UPSTREAM_REPO_URL = "https://github.com/msy1717/Beast-X"
 
 requirements_path = path.join(
@@ -195,7 +195,7 @@ async def upstream(event):
     if conf == "" and force_update is False:
         await print_changelogs(event, ac_br, changelog)
         await event.delete()
-        return await event.respond('Update Friday Userbot By `.update deploy` // `.update now`')
+        return await event.respond('Update BeastX Userbot By `.update deploy` // `.update now`')
 
     if force_update:
         await event.edit(
