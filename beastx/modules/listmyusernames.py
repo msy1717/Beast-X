@@ -1,5 +1,5 @@
 from telethon.tl.functions.channels import GetAdminedPublicChannelsRequest
-fromm . import *
+from . import *
 
 @beast.on(beastx_cmd("listmyusernames"))
 async def mine(event):
