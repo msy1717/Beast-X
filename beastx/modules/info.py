@@ -5,7 +5,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from telethon.utils import get_input_location
 
-from . importb *
+from . import *
 
 @beast.on(beastx_cmd("info ?(.*)"))
 @beast.on(sudo_cmd("info ?(.*)", allow_sudo=True))
