@@ -9,8 +9,7 @@ from fontTools.ttLib import TTFont
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 from telethon.tl import functions, types
 
-from firebot.utils import fire_on_cmd
-
+from . import *
 COLORS = [
     "#F07975",
     "#F49F69",
