@@ -523,7 +523,6 @@ else:
             return
         await event.get_chat()
         him_id = event.query.user_id
-        him_name = event.query.first_name
         await event.edit("Your Choice Accepted ✔️")
         text2 = "Ok. Please Wait Until My Master will Approve you soon. Don't Spam Here Or Try Anything Stupid. \nThank You For Contacting Me."
         await borg.send_message(event.query.user_id, text2)
