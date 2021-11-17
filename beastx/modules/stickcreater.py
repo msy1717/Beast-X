@@ -6,13 +6,12 @@ import textwrap
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterDocument
 
-from firebot import CMD_HELP
-from firebot.utils import fire_on_cmd, sudo_cmd
+from . import *
 
 # RegEx by https://t.me/c/1220993104/500653 ( @SnapDragon7410 )
 
 
-@fire.on(fire_on_cmd(pattern="stcr ?(?:(.*?) \| )?(.*)", outgoing=True))
+@beast.on(beastx_cmd(pattern="stcr ?(?:(.*?) \| )?(.*)", outgoing=True))
 async def sticklet(event):
     R = random.randint(0, 256)
     G = random.randint(0, 256)
@@ -69,7 +68,7 @@ async def sticklet(event):
         pass
 
 
-@fire.on(sudo_cmd(pattern="stcr ?(?:(.*?) \| )?(.*)", allow_sudo=True))
+@beast.on(sudo_cmd(pattern="stcr ?(?:(.*?) \| )?(.*)", allow_sudo=True))
 async def sticklet(event):
     R = random.randint(0, 256)
     G = random.randint(0, 256)
