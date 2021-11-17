@@ -209,7 +209,7 @@ if lang == "si":
             return
         await event.get_chat()
         him_id = event.query.user_id
-        hin_name=event.query.first_name
+        him_name = event.query.first_name
         text1 = "ඔයා ඇවිත් තියෙන්නෙ හොඳ දේකට නෙමේ.. ඔයා තෝරපු එක පිළිගන්න බෑ.. ඒක නිසා ඔයාව Block කරනවා"
         await event.edit("ඔයා තෝරපු එක පිළිගන්න බෑ ❌")
         await borg.send_message(event.query.user_id, text1)
@@ -228,8 +228,7 @@ if lang == "si":
         await event.answer("Back", cache_time=0, alert=False)
         # This Is Copy of Above Code. (C) @SpEcHiDe
         buttons = paginate_help(0, CMD_HELP, "helpme")
-        sed = f"""Beast-X Modules Are Listed Here !\n
-    For More Help or Support contact {DEFAULTUSER} \nCurrently Loaded Plugins: {len(CMD_LIST)}\nCurrently using Language - Sinhala (Sinhalese)"""
+        sed = f"""**Bot of {DEFAULTUSER} \n\n𝕄𝔸𝕀ℕ 𝕄𝔼ℕ𝕌\n\nTotal Commands:{len(CMD_LIST)}\n**"""
         await event.edit(message=sed, buttons=buttons)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"whattalk")))
