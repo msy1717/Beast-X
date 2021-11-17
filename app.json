@@ -25,7 +25,7 @@
     },
     "ALIVE_NAME": {
       "description": "Enter Username Here ",
-      "value": "God Mrunal"
+      "value": ""
     },
     "lang": {
       "description": "Leave as en Don’t change ",
@@ -41,7 +41,7 @@
     },
     "PLUGIN_CHANNEL": {
       "description": "Channel Where You Save Your Plugins",
-      "value": "-1001753035105"
+      "value": "-1001700251224"
     },
     "SUDO_USERS": {
       "description": "Enter A User Id Which You Would Like to Use To Control Sudo. Don't Give Your Own ID Or ID Of Users You Don't Trust.",
@@ -66,7 +66,7 @@
       "required": false
     },
     "GIT_REPO_NAME": {
-      "description": "Your repo name Example: chrisdroid1/firebot, but GITHUB_ACCESS_TOKEN must be setup first.",
+      "description": "Your repo name Example: msy1717/beastx, but GITHUB_ACCESS_TOKEN must be setup first.",
       "value": "",
       "required": false
     },
@@ -108,7 +108,7 @@
     },
      "ALIVE_IMAGE": {
       "description": "Enter Image URL for bot pic ",
-      "value": "https://telegra.ph/file/a6c797b401aa251495221.jpg"
+      "value": "https://telegra.ph/file/4a1e0ee716f805cf66777.jpg"
     },
      "PMPERMIT_PIC": {
       "description": "Enter Image URL for bot's pmsecurity pic ",
