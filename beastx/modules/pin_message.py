@@ -2,7 +2,7 @@ from telethon.tl import functions
 
 from . import *
 
-@beast.on(beastx_cmd("pin ?(.*)"))
+@beast.on(beastx_cmd("gpin ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
