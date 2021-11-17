@@ -405,7 +405,7 @@ class Quote:
                 space += textfont.getsize(letter)[0]
 
 
-@borg.on(fire_on_cmd(pattern="q ?(.*)"))
+@beast.on(beastx_cmd(pattern="q ?(.*)"))
 async def create_sticker(message):
     if not os.path.isdir(".tmp"):
         os.mkdir(".tmp", 0o755)
