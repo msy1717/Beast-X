@@ -529,7 +529,7 @@ else:
         await borg.send_message(event.query.user_id, text2)
         await tgbot.send_message(
             LOG_CHAT,
-            message=f"🌹incomming pm from, A [{him_name}](tg://user?id={him_id})🌹.",
+            message=f"🌹incomming pm from, A [USER](tg://user?id={him_id})🌹.",
         )
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"askme")))
@@ -540,13 +540,12 @@ else:
             return
         await event.get_chat()
         him_id = event.query.user_id
-        him_name = event.query.first_name
         await event.edit("Your choice is Accepted ✔️")
         text3 = "Ok, Wait. My Master will reply you soon. Kindly, Wait."
         await borg.send_message(event.query.user_id, text3)
         await tgbot.send_message(
             LOG_CHAT,
-            message=f"🌹incomming pm from, A [{him_name}](tg://user?id={him_id})🌹.",
+            message=f"🌹incomming pm from, A [User](tg://user?id={him_id})🌹.",
         )
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
