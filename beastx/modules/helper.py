@@ -33,7 +33,7 @@ async def cmd_list(event):
             else:
                 await event.edit(input_str + " is not a valid plugin!")
         else:
-            help_string = f"""Bot of {DEFAULTUSER}\n𝕄𝔸𝕀ℕ 𝕄𝔼ℕ𝕌\nTotal Commands:{len(CMD_LIST)}\n"""
+            help_string = f"""Beast-X Modules Are Listed Here !\n Bot of {DEFAULTUSER}"""
             results = await bot.inline_query(  # pylint:disable=E0602
                 tgbotusername, help_string
             )
