@@ -209,6 +209,7 @@ if lang == "si":
             return
         await event.get_chat()
         him_id = event.query.user_id
+        hin_name=event.query.first_name
         text1 = "ඔයා ඇවිත් තියෙන්නෙ හොඳ දේකට නෙමේ.. ඔයා තෝරපු එක පිළිගන්න බෑ.. ඒක නිසා ඔයාව Block කරනවා"
         await event.edit("ඔයා තෝරපු එක පිළිගන්න බෑ ❌")
         await borg.send_message(event.query.user_id, text1)
@@ -498,9 +499,9 @@ else:
         await event.edit("Choice Not Accepted ❌")
         await borg.send_message(event.query.user_id, text1)
         await borg(functions.contacts.BlockRequest(event.query.user_id))
-        await borg.send_message(
+        await tgbot.send_message(
             LOG_CHAT,
-            f"Hello, A Noob [Nibba](tg://user?id={him_id}) Selected Probhited Option, Therefore Blocked.",
+            f"Hello, A Noob [{him_name}](tg://user?id={him_id}) Selected Probhited Option, Therefore Blocked.",
         )
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"backme")))
@@ -512,8 +513,7 @@ else:
         await event.answer("Back", cache_time=0, alert=False)
         # This Is Copy of Above Code. (C) @SpEcHiDe
         buttons = paginate_help(0, CMD_HELP, "helpme")
-        sed = f"""Beast-X Userbot Modules Are Listed Here !\n
-    For More Help or Support contact {DEFAULTUSER} \nCurrently Loaded Plugins: {len(CMD_LIST)}\nCurrently using Language - English (Standard)"""
+        sed = f"""**Bot of {DEFAULTUSER} \n\n𝕄𝔸𝕀ℕ 𝕄𝔼ℕ𝕌\n\nTotal Commands:{len(CMD_LIST)}\n**"""
         await event.edit(message=sed, buttons=buttons)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"whattalk")))
@@ -527,9 +527,9 @@ else:
         await event.edit("Your Choice Accepted ✔️")
         text2 = "Ok. Please Wait Until My Master will Approve you soon. Don't Spam Here Or Try Anything Stupid. \nThank You For Contacting Me."
         await borg.send_message(event.query.user_id, text2)
-        await borg.send_message(
+        await tgbot.send_message(
             LOG_CHAT,
-            message=f"Hello, A [New User](tg://user?id={him_id}). Wants To Talk With You.",
+            message=f"🌹incomming pm from, A [{him_name}](tg://user?id={him_id})🌹.",
         )
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"askme")))
@@ -543,9 +543,9 @@ else:
         await event.edit("Your choice is Accepted ✔️")
         text3 = "Ok, Wait. My Master will reply you soon. Kindly, Wait."
         await borg.send_message(event.query.user_id, text3)
-        await borg.send_message(
+        await tgbot.send_message(
             LOG_CHAT,
-            message=f"Hello, A [New User](tg://user?id={him_id}). Wants To Ask You Something.",
+            message=f"🌹incomming pm from, A [{him_name}](tg://user?id={him_id})🌹.",
         )
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
