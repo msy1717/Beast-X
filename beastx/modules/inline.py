@@ -500,7 +500,7 @@ else:
         await borg(functions.contacts.BlockRequest(event.query.user_id))
         await tgbot.send_message(
             LOG_CHAT,
-            f"Hello, A Noob [{him_name}](tg://user?id={him_id}) Selected Probhited Option, Therefore Blocked.",
+            f"Hello, A Noob [Blocked](tg://user?id={him_id}) Selected Probhited Option, Therefore Blocked.",
         )
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"backme")))
@@ -528,7 +528,7 @@ else:
         await borg.send_message(event.query.user_id, text2)
         await tgbot.send_message(
             LOG_CHAT,
-            message=f"🌹incomming pm from, A [USER](tg://user?id={him_id})🌹.",
+            message=f"**🌹incomming pm from, A [Casual Talk](tg://user?id={him_id})🌹.**",
         )
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"askme")))
@@ -544,7 +544,7 @@ else:
         await borg.send_message(event.query.user_id, text3)
         await tgbot.send_message(
             LOG_CHAT,
-            message=f"🌹incomming pm from, A [User](tg://user?id={him_id})🌹.",
+            message=f"**🌹incomming pm from, A [Requesting](tg://user?id={him_id})🌹.**",
         )
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
