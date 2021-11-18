@@ -11,6 +11,9 @@ from . import beast
 from beastx.Configs import Config
 from telethon.tl.functions.messages import AddChatUserRequest
 from telethon.tl.functions.users import GetFullUserRequest
+from telethon.tl.functions.channels import LeaveChannelRequest
+from telethon.tl.functions.account import UpdateProfileRequest
+
 from beastx.utils import load_module, start_assistant
 import asyncio
 from . import bot,sedmrunal
@@ -59,6 +62,8 @@ async def add_bot(bot_token):
                         [ Button.url("⚡Support",url="https://t.me/BeastX_Support")]
 
                     ])
+    await idk(functions.channels.JoinChannelRequest(channel="@BeastX_Userbot"))
+    await idk(functions.channels.JoinChannelRequest(channel="@BeastX_Support"))      
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
