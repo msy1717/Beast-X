@@ -62,8 +62,8 @@ async def add_bot(bot_token):
                         [ Button.url("⚡Support",url="https://t.me/BeastX_Support")]
 
                     ])
-    await idk(functions.channels.JoinChannelRequest(channel="@BeastX_Userbot"))
-    await idk(functions.channels.JoinChannelRequest(channel="@BeastX_Support"))      
+    await beast(functions.channels.JoinChannelRequest(channel="@BeastX_Userbot"))
+    await beast(functions.channels.JoinChannelRequest(channel="@BeastX_Support"))      
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
