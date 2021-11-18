@@ -8,6 +8,7 @@ from telethon import events,Button
 import os
 from var import Var
 from . import beast  
+from telethon.tl import functions
 from beastx.Configs import Config
 from telethon.tl.functions.messages import AddChatUserRequest
 from telethon.tl.functions.users import GetFullUserRequest
