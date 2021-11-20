@@ -14,7 +14,7 @@ from . import *
 async def _(event):
     if event.fwd_from:
         return
-    if event.sender.id in Config.SUDO_USERS:
+    if event.sender_id in Config.SUDO_USERS:
         return await event.reply("`Sorry kid but you are not worthy to use this command...`")
     await edit_or_reply(event, "Processing ...")
     cmd = event.text.split(" ", maxsplit=1)[1]
