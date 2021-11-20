@@ -36,8 +36,8 @@
 
 # TuToRiaL
 
-<a href=""><img src="https://img.shields.io/badge/How%20To%20Deploy-blue.svg?logo=Youtube"></a>
-<a href=""><img src="https://img.shields.io/youtube/views/aWnWbFGXp5U?style=social">
+<a href="https://youtu.be/ck4U8eyE9vk"><img src="https://img.shields.io/badge/How%20To%20Deploy-blue.svg?logo=Youtube"></a>
+<a href="https://youtu.be/ck4U8eyE9vk"><img src="https://img.shields.io/youtube/views/aWnWbFGXp5U?style=social">
 
 
 
