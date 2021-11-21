@@ -17,9 +17,10 @@ import asyncio
 import random
 
 from . import *
+from beastx.events import register
 
 
-@beast_cmd(pattern=".hack")
+@register(pattern=".hack")
 async def _(event):
     animation_interval = 0.7
     animation_ttl = range(0, 11)
