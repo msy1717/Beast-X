@@ -1,13 +1,14 @@
 
 
 
+from beastx.events import register
 
 import base64
 
 from . import *
 
 
-@beast_cmd(pattern=".encode ?(.*)")
+@register(pattern=".encode ?(.*)")
 async def encod(e):
     match = e.pattern_match.group(1)
     if not match and e.is_reply:
@@ -22,7 +23,7 @@ async def encod(e):
     await eor(e, f"**=>> Encoded Text :** `{match}`\n\n**=>> OUTPUT :**\n`{atc}`")
 
 
-@beast_cmd(pattern=".decode ?(.*)")
+@register(pattern=".decode ?(.*)")
 async def encod(e):
     match = e.pattern_match.group(1)
     if not match and e.is_reply:
