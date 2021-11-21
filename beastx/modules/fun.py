@@ -8,14 +8,15 @@ from pyjokes import get_joke
 from telethon.errors import ChatSendMediaForbiddenError
 
 from . import *
+from beastx.events import register
 
 
-@beast_cmd(pattern=".joke$")
+@register(pattern=".joke$")
 async def _(ult):
     await eor(ult, get_joke())
 
 
-@beast_cmd(pattern=".insult$")
+@register(pattern=".insult$")
 async def gtruth(ult):
     m = await eor(ult, "Generating...")
     nl = "https://fungenerators.com/random/insult/new-age-insult/"
@@ -25,7 +26,7 @@ async def gtruth(ult):
     await m.edit(f"{cm}")
 
 
-@beast_cmd(pattern=".url ?(.*)")
+@register(pattern=".url ?(.*)")
 async def _(event):
     input_str = event.pattern_match.group(1)
     if not input_str:
@@ -44,7 +45,7 @@ async def _(event):
         await eor(event, "`Something went wrong. Please try again Later.`")
 
 
-@beast_cmd(pattern=".decide$")
+@register(pattern=".decide$")
 async def _(event):
     hm = await eor(event, "`Deciding`")
     r = requests.get("https://yesno.wtf/api").json()
@@ -55,7 +56,7 @@ async def _(event):
         await eor(event, r["answer"])
 
 
-@beast_cmd(pattern=".xo$")
+@register(pattern=".xo$")
 async def xo(ult):
     xox = await ult.client.inline_query("xobot", "play")
     await xox[random.randrange(0, len(xox) - 1)].click(
@@ -64,7 +65,7 @@ async def xo(ult):
     await ult.delete()
 
 
-@beast_cmd(pattern=".wordi$")
+@register(pattern=".wordi$")
 async def word(ult):
     game = await ult.client.inline_query("wordibot", "play")
     await game[0].click(
@@ -73,7 +74,7 @@ async def word(ult):
     await ult.delete()
 
 
-@beast_cmd(pattern=".gps (.*)")
+@register(pattern=".gps (.*)")
 async def map(ult):
     get = ult.pattern_match.group(1)
     if not get:
