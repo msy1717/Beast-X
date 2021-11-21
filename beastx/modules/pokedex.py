@@ -12,8 +12,9 @@ from pokedex import pokedex as badhiya
 
 from . import *
 
+from beastx.events import register
 
-@beast_cmd(pattern=".pokemon ?(.*)")
+@register(pattern=".pokemon ?(.*)")
 async def pokedex(event):
     pokemon = event.pattern_match.group(1).lower()
     if not pokemon:
@@ -112,7 +113,7 @@ async def pokedex(event):
     await xx.delete()
 
 
-@beast_cmd(pattern=".pokecard ?(.*)")
+@register(pattern=".pokecard ?(.*)")
 async def pokecard(event):
     pokename = event.pattern_match.group(1).lower()
     if not pokename:
