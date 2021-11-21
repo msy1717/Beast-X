@@ -5,6 +5,7 @@
 
 
 import re
+from beastx.events import register
 
 import bs4
 import requests
@@ -14,7 +15,7 @@ from . import *
 langi = "en"
 
 
-@beast_cmd(pattern=".imdb ?(.*)")
+@register(pattern=".imdb ?(.*)")
 async def imdb(e):
     await eor(e, "`...`")
     movie_name = e.pattern_match.group(1)
