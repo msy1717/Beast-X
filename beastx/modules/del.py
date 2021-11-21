@@ -3,9 +3,10 @@ import asyncio
 from telethon.events import NewMessage as NewMsg
 
 from . import *
+from beastx.events import register
 
 
-@beast_cmd(pattern=".del$")
+@register(pattern=".del$")
 async def delete_it(delme):
     msg_src = await delme.get_reply_message()
     if msg_src:
