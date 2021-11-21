@@ -2,6 +2,7 @@
 
 
 from . import *
+from beastx.events import register
 
 def evaluate(commands):
     interpreter = BrainfuckInterpreter(commands)
@@ -156,7 +157,7 @@ def bf(text):
   return ''.join(items)
 
 
-@beast_cmd(
+@register(
     pattern="bf",
 )
 async def _(event):        
@@ -170,7 +171,7 @@ async def _(event):
     await eor(event, f"{bf(input_)}")
     
 
-@beast_cmd(
+@register(
     pattern="rbf",
 )
 async def _(event):
