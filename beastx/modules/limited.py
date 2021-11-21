@@ -7,9 +7,10 @@
 
 
 from . import *
+from beastx.events import register
 
 
-@beast_cmd(pattern=".limited ?(.*)")
+@register(pattern=".limited ?(.*)")
 async def _(e):
     match = e.pattern_match.group(1)
     msg = await eor(e, "checking if account is limited or not...")
