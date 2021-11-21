@@ -311,9 +311,10 @@ rusifont = [
     "ч",
     "з",
 ]
+from beastx.events import register
 
 from . import *
-@beast_cmd(pattern=".weeb ?(.*)")
+@register(pattern=".weeb ?(.*)")
 async def weebify(ult):
     args = ult.pattern_match.group(1)
     if not args and ult.is_reply:
@@ -330,7 +331,7 @@ async def weebify(ult):
     await eor(ult, string)
 
 
-@beast_cmd(pattern=".tantext ?(.*)")
+@register(pattern=".tantext ?(.*)")
 async def tantxt(ult):
     args = ult.pattern_match.group(1)
     if not args and ult.is_reply:
@@ -347,7 +348,7 @@ async def tantxt(ult):
     await eor(ult, string)
 
 
-@beast_cmd(pattern=".linetext ?(.*)")
+@register(pattern=".linetext ?(.*)")
 async def linetxt(ult):
     args = ult.pattern_match.group(1)
     if not args and ult.is_reply:
@@ -364,7 +365,7 @@ async def linetxt(ult):
     await ult.edit(string)
 
 
-@beast_cmd(pattern=".boxtext ?(.*)")
+@register(pattern=".boxtext ?(.*)")
 async def boxtxt(ult):
     args = ult.pattern_match.group(1)
     if not args and ult.is_reply:
@@ -380,7 +381,7 @@ async def boxtxt(ult):
     await eor(ult, string)
 
 
-@beast_cmd(pattern=".bubbletext ?(.*)")
+@register(pattern=".bubbletext ?(.*)")
 async def bubbletxt(ult):
     args = ult.pattern_match.group(1)
     if not args and ult.is_reply:
@@ -396,7 +397,7 @@ async def bubbletxt(ult):
     await eor(ult, string)
 
 
-@beast_cmd(pattern=".cursive ?(.*)")
+@register(pattern=".cursive ?(.*)")
 async def cursive(ult):
     args = ult.pattern_match.group(1)
     if not args and ult.is_reply:
@@ -412,7 +413,7 @@ async def cursive(ult):
     await eor(ult, string)
 
 
-@beast_cmd(pattern=".greekify ?(.*)")
+@register(pattern=".greekify ?(.*)")
 async def greektext(ult):
     args = ult.pattern_match.group(1)
     if not args and ult.is_reply:
@@ -428,7 +429,7 @@ async def greektext(ult):
     await eor(ult, string)
 
 
-@beast_cmd(pattern=".sorcify ?(.*)")
+@register(pattern=".sorcify ?(.*)")
 async def sorcerertext(ult):
 
     args = ult.pattern_match.group(1)
@@ -446,7 +447,7 @@ async def sorcerertext(ult):
     await eor(ult, string)
 
 
-@beast_cmd(pattern=".fraktify ?(.*)")
+@register(pattern=".fraktify ?(.*)")
 async def frakturtext(ult):
     args = ult.pattern_match.group(1)
     if not args and ult.is_reply:
@@ -463,7 +464,7 @@ async def frakturtext(ult):
     await eor(ult, string)
 
 
-@beast_cmd(pattern=".rusify ?(.*)")
+@register(pattern=".rusify ?(.*)")
 async def rusitext(ult):
     args = ult.pattern_match.group(1)
     if not args and ult.is_reply:
