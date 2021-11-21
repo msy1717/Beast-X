@@ -4,9 +4,10 @@
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
 from . import *
+from beastx.events import register
 
 
-@beast_cmd(pattern=".findsong$")
+@register(pattern=".findsong$")
 async def _(event):
     if not event.reply_to_msg_id:
         return await eor(event, "Reply to an audio message.")
