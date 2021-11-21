@@ -7,6 +7,7 @@
 
 
 
+from beastx.events import register
 
 import asyncio
 
@@ -18,7 +19,7 @@ from . import *
 ERR = "`Can you kindly disable your forward privacy settings for good?`"
 
 
-@beast_cmd(pattern="(.quotly|.qbot) ?(.*)")
+@register(pattern="(.quotly|.qbot) ?(.*)")
 async def _(event):
     if not event.reply_to_msg_id:
         return await eor(event, "```Reply to any user message.```")
@@ -469,7 +470,7 @@ async def replied_user(draw, tot, text, maxlength, title):
             space += textfont.getsize(letter)[0]
 
 
-@beast_cmd(pattern=".q$")
+@register(pattern=".q$")
 async def _(event):
     reply = await event.get_reply_message()
     msg = reply.message
