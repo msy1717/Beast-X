@@ -6,9 +6,10 @@ import requests
 from bs4 import BeautifulSoup as bs
 
 from . import *
+from beastx.events import register
 
 
-@beast_cmd(pattern=".icon ?(.*)")
+@register(pattern=".icon ?(.*)")
 async def www(e):
     a = e.pattern_match.group(1)
     if not a:
