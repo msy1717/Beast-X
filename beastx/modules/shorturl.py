@@ -8,9 +8,10 @@
 import pyshorteners
 
 from . import *
+from beastx.events import register
 
 
-@beast_cmd(pattern=".shorturl ?(.*)")
+@register(pattern=".shorturl ?(.*)")
 async def vom(event):
     a = await eor(event, "`Processing...`")
     try:
