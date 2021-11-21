@@ -22,10 +22,10 @@ import json
 import os
 
 from uniborg.util import edit_or_reply, beastx_cmd, sudo_cmd,admin_cmd
+from beastx.events import register
 
 from beastx import CMD_HELP
 from beastx import beast
-from beastx.utils import register as beast_cmd
 
 
 c1 = "https://dogebin.up.railway.app/" # Moonlight
