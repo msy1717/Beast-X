@@ -37,10 +37,12 @@ import sys
 import asyncio
 import traceback
 import os
+from beastx.events import register
+
 from . import *
 import beastx.utils
 PLUGIN_CHANNEL=int(os.environ.get("PLUGIN_CHANNEL",-100))
-@beast_cmd(pattern="^!extdl", outgoing=True)
+@register(pattern="^!extdl", outgoing=True)
 async def install(event):
     if event.fwd_from:
         return
