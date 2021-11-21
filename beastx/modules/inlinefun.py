@@ -12,6 +12,7 @@
 
 
 from random import choice
+from beastx.events import register
 
 from telethon.errors import ChatSendInlineForbiddenError
 
@@ -22,7 +23,7 @@ def deEmojify(inputString: str) -> str:
 from . import *
 
 
-@beast_cmd(pattern=".tweet ?(.*)")
+@register(pattern=".tweet ?(.*)")
 async def tweet(e):
     wai = await eor(e, "`Processing...`")
     text = e.pattern_match.group(1)
@@ -36,7 +37,7 @@ async def tweet(e):
         await eor(e, str(m))
 
 
-@beast_cmd(pattern=".stic ?(.*)")
+@register(pattern=".stic ?(.*)")
 async def tweet(e):
     if len(e.text) > 5 and e.text[5] != " ":
         return
@@ -50,7 +51,7 @@ async def tweet(e):
     await wai.delete()
 
 
-@beast_cmd(pattern=".gglax ?(.*)")
+@register(pattern=".gglax ?(.*)")
 async def gglax_sticker(e):
     wai = await eor(e, "`Processing...`")
     text = e.pattern_match.group(1)
@@ -64,7 +65,7 @@ async def gglax_sticker(e):
         await eor(e, str(m))
 
 
-@beast_cmd(pattern=".frog ?(.*)")
+@register(pattern=".frog ?(.*)")
 async def honkasays(e):
     wai = await eor(e, "`Processing...`")
     text = e.pattern_match.group(1)
@@ -87,7 +88,7 @@ async def honkasays(e):
         await wai.edit(str(er))
 
 
-@beast_cmd(pattern=".uta ?(.*)")
+@register(pattern=".uta ?(.*)")
 async def nope(doit):
     ok = doit.pattern_match.group(1)
     replied = await doit.get_reply_message()
@@ -106,7 +107,7 @@ async def nope(doit):
     await a.delete()
 
 
-@beast_cmd(pattern=".quot ?(.*)")
+@register(pattern=".quot ?(.*)")
 async def quote_(event):
     IFUZI = event.pattern_match.group(1)
     if not IFUZI:
