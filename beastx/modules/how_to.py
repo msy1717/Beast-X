@@ -5,9 +5,10 @@
 import requests
 
 from . import *
+from beastx.events import register
 
 
-@beast_cmd(pattern=".htg ?(.*)")
+@register(pattern=".htg ?(.*)")
 async def _(e):
     text = e.pattern_match.group(1)
     if not text:
@@ -22,7 +23,7 @@ async def _(e):
         await eod(e, "`something is wrong. please try again later.`")
 
 
-@beast_cmd(pattern=".htd ?(.*)")
+@register(pattern=".htd ?(.*)")
 async def _(e):
     text = e.pattern_match.group(1)
     if not text:
