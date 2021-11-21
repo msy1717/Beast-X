@@ -4,9 +4,10 @@
 
 
 from . import *
+from beastx.events import register
 
 
-@beast_cmd(pattern=".search( -r|) ?(.*)")
+@register(pattern=".search( -r|) ?(.*)")
 async def searcher(e):
     eris = await eor(e, "`Working..`")
     args = e.pattern_match.group(2)
