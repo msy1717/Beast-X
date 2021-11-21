@@ -9,9 +9,10 @@ import requests
 from bs4 import BeautifulSoup as bs
 
 from . import *
+from beastx.events import register
 
 
-@beast_cmd(pattern=".devian ?(.*)")
+@register(pattern=".devian ?(.*)")
 async def downakd(e):
     match = e.pattern_match.group(1)
     if not match:
