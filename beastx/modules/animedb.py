@@ -11,14 +11,13 @@ Search animes and manga from anilist.co using @animedb_bot
 from telethon.errors import ChatSendInlineForbiddenError
 import requests as r
 from bs4 import BeautifulSoup as bs
-
-
+from beastx.events import register
 from . import *
 
 INLOCK = "`Seems like inline messages aren't allowed here`"
 eor = edit_or_reply
 eod = edit_or_reply
-@beast_cmd(
+@register(
     pattern=".manga ?(.*)",
 )
 async def manga(ult):
@@ -38,7 +37,7 @@ async def manga(ult):
     except Exception:
         return await msg.edit("`No Results Found ...`")
 
-@beast_cmd(pattern=".apod$")
+@register(pattern=".apod$")
 async def aposj(e):
     link = "https://apod.nasa.gov/apod/"
     C = r.get(link).content
@@ -60,7 +59,7 @@ async def aposj(e):
     except Exception as E:
         return await eor(e, str(E))
     
-@beast_cmd(pattern=".asupan ?(.*)")
+@register(pattern=".asupan ?(.*)")
 async def _(event):
     try:
         response = requests.get("https://api-tede.herokuapp.com/api/asupan/ptl").json()
@@ -70,7 +69,7 @@ async def _(event):
         await eor(event, "`Something went wrong LOL...`")
 
 
-@beast_cmd(pattern=".wibu ?(.*)")
+@register(pattern=".wibu ?(.*)")
 async def _(event):
     try:
         response = requests.get("https://api-tede.herokuapp.com/api/asupan/wibu").json()
@@ -80,7 +79,7 @@ async def _(event):
         await eor(event, "`Something went wrong LOL...`")
 
 
-@beast_cmd(pattern=".chika ?(.*)")
+@register(pattern=".chika ?(.*)")
 async def _(event):
     try:
         response = requests.get("https://api-tede.herokuapp.com/api/chika").json()
