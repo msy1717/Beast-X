@@ -9,11 +9,12 @@ Command : `{i}aniquote`
 """
 
 import requests
+from beastx.events import register
 
 from . import *
 
 
-@beast_cmd(pattern=".aniquote")
+@register(pattern=".aniquote")
 async def _(ult):
     u = await eor(ult, "...")
     try:
