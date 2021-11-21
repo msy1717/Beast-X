@@ -2,6 +2,7 @@
 import pyfiglet
 
 from . import *
+from beastx.events import register
 
 CMD_SET = {
     "slant": "slant",
@@ -455,7 +456,7 @@ CMD_SET = {
 }
 
 
-@beast_cmd(pattern=".figlet ?(.*)")
+@register(pattern=".figlet ?(.*)")
 async def figlet(event):
     input_str = event.pattern_match.group(1)
     if "|" in input_str:
