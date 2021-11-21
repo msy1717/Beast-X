@@ -9,6 +9,7 @@
 
 
 
+from beastx.events import register
 
 
 
