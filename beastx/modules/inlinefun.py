@@ -23,7 +23,7 @@ def deEmojify(inputString: str) -> str:
 from . import *
 
 
-@register(pattern=".tweet ?(.*)")
+@beast.on(beastx_cmd("tweet (.*)"))
 async def tweet(e):
     wai = await eor(e, "`Processing...`")
     text = e.pattern_match.group(1)
@@ -37,7 +37,7 @@ async def tweet(e):
         await eor(e, str(m))
 
 
-@register(pattern=".stic ?(.*)")
+@beast.on(beastx_cmd("stick (.*)"))
 async def tweet(e):
     if len(e.text) > 5 and e.text[5] != " ":
         return
@@ -51,7 +51,7 @@ async def tweet(e):
     await wai.delete()
 
 
-@register(pattern=".gglax ?(.*)")
+@beast.on(beastx_cmd("stick (.*)"))
 async def gglax_sticker(e):
     wai = await eor(e, "`Processing...`")
     text = e.pattern_match.group(1)
@@ -65,7 +65,7 @@ async def gglax_sticker(e):
         await eor(e, str(m))
 
 
-@register(pattern=".frog ?(.*)")
+@beast.on(beastx_cmd("frog (.*)"))
 async def honkasays(e):
     wai = await eor(e, "`Processing...`")
     text = e.pattern_match.group(1)
@@ -88,7 +88,7 @@ async def honkasays(e):
         await wai.edit(str(er))
 
 
-@register(pattern=".uta ?(.*)")
+@beast.on(beastx_cmd("uta (.*)"))
 async def nope(doit):
     ok = doit.pattern_match.group(1)
     replied = await doit.get_reply_message()
@@ -107,7 +107,7 @@ async def nope(doit):
     await a.delete()
 
 
-@register(pattern=".quot ?(.*)")
+@beast.on(beastx_cmd("quot (.*)"))
 async def quote_(event):
     IFUZI = event.pattern_match.group(1)
     if not IFUZI:
