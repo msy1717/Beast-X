@@ -37,7 +37,7 @@ MSG = f"""
             ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎
 
 ┏━━━━━━━━━━━━━━━━━
-┣•Assistant➠ {UL}
+┣•Assistant➠ {mm.username}
 ┣•Status➠ `Running`
 ┣•Version➠ {VR}
 ┗━━━━━━━━━━━━━━━━━
@@ -54,6 +54,9 @@ async def add_bot(bot_token):
     await bot.start(bot_token)
     bot.me = await bot.get_me()
     bot.uid = telethon.utils.get_peer_id(bot.me)
+    om = await beast.get_me()
+
+    mm = await sedmrunal.get_me()
     await sedmrunal.send_message(sur, MSG,
                                  
                                   buttons=[
