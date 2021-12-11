@@ -52,9 +52,9 @@ async def add_bot(bot_token):
 
 ┏━━━━━━━━━━━━━━━━━
 
-┣•Assistant➠ {mm.username}
+┣•Assistant➠ @{mm.username}
 
-┣•Status➠ `Running`
+┣•User➠ @{om.username}
 
 ┣•Version➠ {VR}
 
