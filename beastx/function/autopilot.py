@@ -1,7 +1,7 @@
 
 
 from .. import beast,sedmrunal,sedprint 
-from var import Var
+from beastx.Configs import Config
 from telethon.errors.rpcerrorlist import ChannelsTooMuchError
 from telethon.tl.custom import Button
 from telethon.tl.functions.channels import (
@@ -19,7 +19,7 @@ from telethon.tl.types import (
 
 async def autopilot():
 
-    chat_id = Var.BOTLOG_CHATID 
+    chat_id = Config.PRIVATE_GROUP_ID
     rights = ChatAdminRights(
         add_admins=True,
         invite_users=True,
