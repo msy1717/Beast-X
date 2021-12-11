@@ -14,7 +14,7 @@ from telethon.tl.functions.messages import AddChatUserRequest
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.functions.channels import LeaveChannelRequest
 from telethon.tl.functions.account import UpdateProfileRequest
-
+from beastx.function.autopilot import autopilot
 from beastx.utils import load_module, start_assistant
 import asyncio
 from . import bot,sedmrunal
@@ -115,7 +115,9 @@ for name in files:
         path1 = Path(f.name)
         shortname = path1.stem
         load_module(shortname.replace(".py", ""))
- 
+
+beast.loop.run_until_complete(autopilot())
+
 
         
 if Config.ENABLE_ASSISTANTBOT == "ENABLE":
