@@ -40,7 +40,7 @@ async def autopilot():
       ll = await beast.upload_file(photo)
       await beast(EditPhotoRequest(chat_id, InputChatUploadedPhoto(ll)))
       os.remove(photo)
-      except noiceson:
+    except noiceson:
         sedprint.info(
             "nice you have alreqady added bot in chat"
         )
