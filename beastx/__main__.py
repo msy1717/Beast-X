@@ -31,20 +31,7 @@ UL = Config.TG_BOT_USER_NAME_BF_HER
 VR = "Beast 0.1"
 chat_id = sur
 
-MSG = f"""
-✨𝔹𝕖𝕒𝕤𝕥 ℍ𝕒𝕤 𝔹𝕖𝕖𝕟 𝔻𝕖𝕡𝕝𝕠𝕪𝕖𝕕!
 
-            ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎
-
-┏━━━━━━━━━━━━━━━━━
-┣•Assistant➠ {mm.username}
-┣•Status➠ `Running`
-┣•Version➠ {VR}
-┗━━━━━━━━━━━━━━━━━
-
-Do `.ping `or` /alive` for check userbot working
-
-"""
 
 
 sed = logging.getLogger("beastx")
@@ -57,6 +44,25 @@ async def add_bot(bot_token):
     om = await beast.get_me()
 
     mm = await sedmrunal.get_me()
+    MSG = f"""
+
+✨𝔹𝕖𝕒𝕤𝕥 ℍ𝕒𝕤 𝔹𝕖𝕖𝕟 𝔻𝕖𝕡𝕝𝕠𝕪𝕖𝕕!
+
+            ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎
+
+┏━━━━━━━━━━━━━━━━━
+
+┣•Assistant➠ {mm.username}
+
+┣•Status➠ `Running`
+
+┣•Version➠ {VR}
+
+┗━━━━━━━━━━━━━━━━━
+
+Do `.ping `or` /alive` for check userbot working
+
+"""
     await sedmrunal.send_message(sur, MSG,
                                  
                                   buttons=[
