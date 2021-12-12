@@ -42,7 +42,7 @@ async def add_bot(bot_token):
     await bot.start(bot_token)
     bot.me = await bot.get_me()
     bot.uid = telethon.utils.get_peer_id(bot.me)
-'''   
+   
     om = await beast.get_me()
 
     mm = await sedmrunal.get_me()
@@ -73,9 +73,9 @@ Do `.ping `or` /alive` for check userbot working
     except Exception as e:
         sed.info(str(e))
         sed.info("---------------------------------------")
-        sed.info("------------Bot Havent Deployed\npls addd you assistant bo to your log group or \ncheck your group id in vars--------------")
+        sed.info("Bruh you forgot add assistant in log group")
         sed.info("---------------------------------------")
-        '''
+        
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
@@ -141,36 +141,8 @@ if Config.ENABLE_ASSISTANTBOT == "ENABLE":
     sed.info("---------------------------------------")
     sed.info("------------@BeastX_Userbot------------")
     sed.info("---------------------------------------")
-    om = await beast.get_me()
-
-    mm = await sedmrunal.get_me()
-    try:
-        MSG = f"""
-
-✨𝔹𝕖𝕒𝕤𝕥 ℍ𝕒𝕤 𝔹𝕖𝕖𝕟 𝔻𝕖𝕡𝕝𝕠𝕪𝕖𝕕!
-
-            ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎
-┏━━━━━━━━━━━━━━━━━
-┣•Assistant➠ @{mm.username}
-┣•User➠ @{om.username}
-┣•Version➠ {VR}
-┗━━━━━━━━━━━━━━━━━
-
-Do `.ping `or` /alive` for check userbot working
-
-"""
-        await sedmrunal.send_message(sur, MSG,
-                                 
-                                  buttons=[
-
-                        [Button.url("⭐Updates", url="https://t.me/BeastX_Userbot")],
-
-                        [ Button.url("⚡Support",url="https://t.me/BeastX_Support")]
-
-                    ])
-    except Exception as e:
-        sed.info(str(e))
-        sed.info("Bruh you forgot add assistant in log group")
+  
+        
         
         
            
