@@ -69,9 +69,6 @@ Do `.ping `or` /alive` for check userbot working
                         [ Button.url("⚡Support",url="https://t.me/BeastX_Support")]
 
                     ])
-    await beast(functions.channels.JoinChannelRequest(channel="@BeastX_Userbot"))
-    await beast(functions.channels.JoinChannelRequest(channel="@BeastX_Support"))
-    
     except Exception as e:
         sed.info(str(e))
         sed.info("---------------------------------------")
