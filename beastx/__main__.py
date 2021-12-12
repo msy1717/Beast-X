@@ -49,7 +49,7 @@ async def add_bot(bot_token):
         sed.info("Adding your assistant to log group you forgot it")
         sed.info("Processing.......")
         sed.info("Done......")
-        await client(InviteToChannelRequest(
+        await beast(InviteToChannelRequest(
     sur,
     [UL]
 ))
