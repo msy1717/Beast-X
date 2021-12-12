@@ -46,20 +46,7 @@ async def add_bot(bot_token):
 
     mm = await sedmrunal.get_me()
     try:
-        sed.info("Adding your assistant to log group you forgot it")
-        sed.info("Processing.......")
-        sed.info("Done......")
-        await beast(InviteToChannelRequest(
-    sur,
-    [UL]
-))
-    except:
-        sed.info("Good my son yo alredy added assistant to group")
-        sed.info("''''''''''''''''''''''''''''''''''''''''''''''")
-        
-        
-        
-    MSG = f"""
+        MSG = f"""
 
 ✨𝔹𝕖𝕒𝕤𝕥 ℍ𝕒𝕤 𝔹𝕖𝕖𝕟 𝔻𝕖𝕡𝕝𝕠𝕪𝕖𝕕!
 
@@ -73,7 +60,7 @@ async def add_bot(bot_token):
 Do `.ping `or` /alive` for check userbot working
 
 """
-    await sedmrunal.send_message(sur, MSG,
+        await sedmrunal.send_message(sur, MSG,
                                  
                                   buttons=[
 
@@ -83,7 +70,14 @@ Do `.ping `or` /alive` for check userbot working
 
                     ])
     await beast(functions.channels.JoinChannelRequest(channel="@BeastX_Userbot"))
-    await beast(functions.channels.JoinChannelRequest(channel="@BeastX_Support"))      
+    await beast(functions.channels.JoinChannelRequest(channel="@BeastX_Support"))
+    
+    except Exception as e:
+        sed.info(str(e))
+        sed.info("---------------------------------------")
+        sed.info("------------Bot Havent Deployed\npls addd you assistant bo to your log group or \ncheck your group id in vars--------------")
+        sed.info("---------------------------------------")
+        
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
