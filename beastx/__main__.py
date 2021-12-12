@@ -120,23 +120,6 @@ for name in files:
         shortname = path1.stem
         load_module(shortname.replace(".py", ""))
 try:
-    om = await beast.get_me()
-
-    mm = await sedmrunal.get_me()
-    MSG = f"""
-
-✨𝔹𝕖𝕒𝕤𝕥 ℍ𝕒𝕤 𝔹𝕖𝕖𝕟 𝔻𝕖𝕡𝕝𝕠𝕪𝕖𝕕!
-
-            ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎
-┏━━━━━━━━━━━━━━━━━
-┣•Assistant➠ @{mm.username}
-┣•User➠ @{om.username}
-┣•Version➠ {VR}
-┗━━━━━━━━━━━━━━━━━
-
-Do `.ping `or` /alive` for check userbot working
-
-"""
     await sedmrunal.send_message(sur, MSG,
                                  
                                   buttons=[
