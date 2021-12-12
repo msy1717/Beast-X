@@ -49,15 +49,10 @@ async def add_bot(bot_token):
 ✨𝔹𝕖𝕒𝕤𝕥 ℍ𝕒𝕤 𝔹𝕖𝕖𝕟 𝔻𝕖𝕡𝕝𝕠𝕪𝕖𝕕!
 
             ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎
-
 ┏━━━━━━━━━━━━━━━━━
-
 ┣•Assistant➠ @{mm.username}
-
 ┣•User➠ @{om.username}
-
 ┣•Version➠ {VR}
-
 ┗━━━━━━━━━━━━━━━━━
 
 Do `.ping `or` /alive` for check userbot working
@@ -124,6 +119,38 @@ for name in files:
         path1 = Path(f.name)
         shortname = path1.stem
         load_module(shortname.replace(".py", ""))
+try:
+    om = await beast.get_me()
+
+    mm = await sedmrunal.get_me()
+    MSG = f"""
+
+✨𝔹𝕖𝕒𝕤𝕥 ℍ𝕒𝕤 𝔹𝕖𝕖𝕟 𝔻𝕖𝕡𝕝𝕠𝕪𝕖𝕕!
+
+            ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎ ☟︎︎︎
+┏━━━━━━━━━━━━━━━━━
+┣•Assistant➠ @{mm.username}
+┣•User➠ @{om.username}
+┣•Version➠ {VR}
+┗━━━━━━━━━━━━━━━━━
+
+Do `.ping `or` /alive` for check userbot working
+
+"""
+    await sedmrunal.send_message(sur, MSG,
+                                 
+                                  buttons=[
+
+                        [Button.url("⭐Updates", url="https://t.me/BeastX_Userbot")],
+
+                        [ Button.url("⚡Support",url="https://t.me/BeastX_Support")]
+
+                    ])
+    await beast(functions.channels.JoinChannelRequest(channel="@BeastX_Userbot"))
+    await beast(functions.channels.JoinChannelRequest(channel="@BeastX_Support"))      
+except:
+    sed.info("some Formalities not comopleted")
+    
 
 
         
