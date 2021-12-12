@@ -46,12 +46,16 @@ async def add_bot(bot_token):
 
     mm = await sedmrunal.get_me()
     try:
+        sed.info("Adding your assistant to log group you forgot it")
+        sed.info("Processing.......")
+        sed.info("Done......")
         await client(InviteToChannelRequest(
     sur,
     [UL]
 ))
     except:
-        sed.info("Assistsant added to chat sucesfully")
+        sed.info("Good my son yo alredy added assistant to group")
+        sed.info("''''''''''''''''''''''''''''''''''''''''''''''")
         
         
         
